@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="de" href="https://ashwright.de/index.html">
 <meta property="og:title" content="ASHWRIGHT – DayZ mod without NPC traders"><meta property="og:description" content="ASHWRIGHT is a DayZ mod without NPC traders: mine ore, smelt it, forge tools and sell to other players. English and German server, whitelist via Discord."><meta property="og:image" content="https://ashwright.de/img/hero.webp"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261019b">
+<link rel="stylesheet" href="style.css?v=20261019c">
 <script>document.documentElement.classList.add('js')</script>
 
 </head>
@@ -28,109 +28,115 @@
 </div></header>
 <main id="main">
 
-<section class="hero"><div class="wrap">
-  <div>
+<section class="hero" style="padding:0">
+  <img class="poster" src="media/hero-poster.webp" alt="" width="1600" height="670">
+  <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.webp" aria-hidden="true"><source src="media/hero.mp4" type="video/mp4"></video>
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <div class="wrap">
     <div class="kicker mono"><span>DayZ mod</span><span>Map Antoria</span><span>English &amp; Deutsch</span></div>
     <h1>ASH<span class="o">WRIGHT</span></h1>
-    <p class="promise">A DayZ server without NPC traders. You mine <b>ore</b>, smelt it in a furnace you built yourself, forge your own tools and <b>trade with other players</b>. Going solo works too.</p>
-    <div class="cta">
-      <a class="btn" href="#whitelist">Secure a whitelist spot</a>
-      <a class="btn ghost" href="https://discord.gg/mjJFGwnTns">Discord</a>
-      <small>Season 0 · Early access · Players admitted in waves</small>
-    </div>
+    <p class="lede">A DayZ server without NPC traders. You mine <b>ore</b>, smelt it in a furnace you built yourself, forge your own tools and <b>trade with other players</b>. Going solo works too.</p>
+    <div class="cta"><a class="btn" href="#whitelist">Secure a whitelist spot</a><a class="btn ghost" href="https://discord.gg/mjJFGwnTns">Join the Discord</a></div>
   </div>
-  <figure class="plate" style="margin:0">
-    <span class="tag t1">Iron · <b>rust-red banding</b></span>
-    <span class="tag t2">Copper · <b>green patina</b></span>
-    <span class="tag t3">Tin · <b>rarer</b></span>
-    <img src="img/trio.webp" width="1400" height="787" alt="Three ore deposits in a meadow at dusk: iron, copper and tin">
-    <div class="stamp" aria-hidden="true">ASH<small>MASTER</small></div>
-  </figure>
+  <div class="facts"><div class="wrap"><div><b>No traders</b><span>A player made everything</span></div><div><b>14 professions</b><span>From mining to gunsmithing</span></div><div><b>Playable solo</b><span>Trading saves time, nothing more</span></div><div><b>Season 0</b><span>Early access, admitted in waves</span></div></div></div>
+</section>
+
+<section id="spiel"><div class="wrap">
+  <div class="eyebrow mono rv">The game</div>
+  <div class="feature">
+  <div class="txt rv"><div class="num">01</div><h2>No ore spawns at random</h2><p>Every deposit sits where the geology puts it, calculated from the real map data: rock, terrain, water and slope. Ore grows back in real time, and your pickaxe decides what you can mine. If it's too soft, it bounces off.</p><a class="more" href="werkbuch-en.html#erze">More about ore</a></div>
+  <figure class="shot rv"><img src="media/shot-erz.webp" width="1600" height="670" loading="lazy" alt="A chunk breaks under the pickaxe"><figcaption class="mono">A chunk breaks under the pickaxe</figcaption></figure>
+</div>
+  <div class="feature rev">
+  <div class="txt rv"><div class="num">02</div><h2>Ore in, charcoal on, bellows</h2><p>The furnace only melts once it's hot enough. You burn the charcoal in a kiln and build the clay furnace yourself. Copper and tin become bronze, and bronze tools get you to the iron.</p><a class="more" href="werkbuch-en.html#ofen">More about smelting</a></div>
+  <figure class="shot rv"><img src="img/furnace.webp" width="1600" height="670" loading="lazy" alt="The furnace of clay and stone"><figcaption class="mono">The furnace of clay and stone</figcaption></figure>
+</div>
+  <div class="feature">
+  <div class="txt rv"><div class="num">03</div><h2>14 professions, five quality grades</h2><p>Every vein has a grade, and it ends up in the ingot and the tool. How good something turns out depends on the ore and on the experience of whoever makes it. Nothing is rolled by dice.</p><a class="more" href="werkbuch-en.html#berufe">More about professions</a><div class="scale rv"><h3>The five quality grades</h3><ol class="rungs"><li>Impure<small>common</small></li><li>Solid<small>&nbsp;</small></li><li>Pure<small>&nbsp;</small></li><li>High-purity<small>&nbsp;</small></li><li>Flawless<small>rare</small></li></ol></div></div>
+  <figure class="shot rv"><img src="media/shot-schmiede.webp" width="1600" height="670" loading="lazy" alt="Forge at dusk"><figcaption class="mono">Forge at dusk</figcaption></figure>
+</div>
+  <div class="feature rev">
+  <div class="txt rv"><div class="num">04</div><h2>No trader, no starting money</h2><p>Everything that exists was made by a player. Whoever specialises in a profession sells to others. If you'd rather play alone, you'll get by: trading saves time, nothing more. Outside the monuments the rule is: talk first, then shoot.</p><a class="more" href="werkbuch-en.html#handel">More about trade and PvP</a></div>
+  <figure class="shot rv"><img src="media/shot-viadukt.webp" width="1600" height="670" loading="lazy" alt="Antoria: a hut in front of the viaduct"><figcaption class="mono">Antoria: a hut in front of the viaduct</figcaption></figure>
+</div>
 </div></section>
 
-<div class="ticker" aria-hidden="true"><div><span>No NPC traders</span><span>■</span><span>Mine ore</span><span>■</span><span>Smelt in a clay furnace</span><span>■</span><span>Forge at the anvil</span><span>■</span><span>14 professions</span><span>■</span><span>Playable solo</span><span>■</span><span>No starting money</span><span>■</span><span>213 models made in-house</span><span>■</span><span>58 original sounds</span><span>■</span><span>Talk first, shoot second</span><span>■</span><span>No NPC traders</span><span>■</span><span>Mine ore</span><span>■</span><span>Smelt in a clay furnace</span><span>■</span><span>Forge at the anvil</span><span>■</span><span>14 professions</span><span>■</span><span>Playable solo</span><span>■</span><span>No starting money</span><span>■</span><span>213 models made in-house</span><span>■</span><span>58 original sounds</span><span>■</span><span>Talk first, shoot second</span><span>■</span></div></div>
+<section id="bilder" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="eyebrow mono rv">Images</div>
+  <h2 class="sec-title rv">From the game</h2>
+  <p class="sec-lead rv" style="margin-bottom:34px">Footage from the game and renders of our in-house models. Over 200 of them are done.</p>
+  <div class="gal rv"><a href="media/shot-staub.webp" data-cap="Ore falls apart under the pickaxe"><img src="media/shot-staub.webp" loading="lazy" alt="Ore falls apart under the pickaxe"></a><a href="img/trio.webp" data-cap="Iron, copper, tin"><img src="img/trio.webp" loading="lazy" alt="Iron, copper, tin"></a><a href="media/shot-ofen.webp" data-cap="Furnace at dusk"><img src="media/shot-ofen.webp" loading="lazy" alt="Furnace at dusk"></a><a href="media/shot-sturm.webp" data-cap="Storm over the viaduct"><img src="media/shot-sturm.webp" loading="lazy" alt="Storm over the viaduct"></a><a href="img/shatter.webp" data-cap="Chunk, rendered"><img src="img/shatter.webp" loading="lazy" alt="Chunk, rendered"></a><a href="img/furnace.webp" data-cap="Clay furnace at night"><img src="img/furnace.webp" loading="lazy" alt="Clay furnace at night"></a></div>
+</div></section>
+<dialog class="lb" id="lb"><button type="button">Close</button><img alt=""><p></p></dialog>
 
-<section id="ablauf"><div class="wrap">
-  <div class="sec-head rv"><span class="no">01</span><h2>From click to first ingot</h2><p>How you get onto the server and what you do first.</p></div>
-  <ol class="chain rv">
-    <li><div class="n">1</div><h3>Sign up</h3><p>Click “Sign up” in Discord and enter your Steam64 ID. Takes a minute.</p></li>
-    <li><div class="n">2</div><h3>Get admitted</h3><p>We let players in in waves. When it's your turn, you get the role and a message from me.</p></li>
-    <li><div class="n">3</div><h3>The coast</h3><p>You start with an emergency bag, a stone pickaxe and a campfire. Nothing more.</p></li>
-    <li><div class="n">4</div><h3>Craft</h3><p>Find ore, mine it, smelt it, forge it. Sell what you don't need.</p></li>
-  </ol>
+<section id="berufe"><div class="wrap">
+  <div class="eyebrow mono rv">Professions</div>
+  <h2 class="sec-title rv">Who will you be</h2>
+  <p class="sec-lead rv" style="margin-bottom:34px">Every job earns experience in its profession. You can learn everything, but mastering everything takes a lot of time.</p>
+  <div class="rv"><div class="tabs" role="tablist"><button role="tab" aria-selected="true" aria-controls="tp0">Raw materials</button><button role="tab" aria-selected="false" aria-controls="tp1">Refining</button><button role="tab" aria-selected="false" aria-controls="tp2">Making</button><button role="tab" aria-selected="false" aria-controls="tp3">Outdoors</button></div><h3 class="nojs-h">Raw materials</h3><div class="tabpanel" id="tp0" role="tabpanel"><div class="t" style="--c:var(--steel)"><h3>Mining</h3><p>Mine ore, with a bigger yield per level.</p></div><div class="t" style="--c:var(--steel)"><h3>Prospecting</h3><p>Find deposits and judge them.</p></div><div class="t" style="--c:var(--steel)"><h3>Forestry &amp; Resin</h3><p>Fell trees, split wood, collect resin.</p></div><div class="t" style="--c:var(--steel)"><h3>Hunting &amp; Tanning</h3><p>Pelts, leather, sinew and meat.</p></div></div><h3 class="nojs-h">Refining</h3><div class="tabpanel" id="tp1" role="tabpanel" hidden><div class="t" style="--c:var(--ember)"><h3>Smelting</h3><p>Smelt ore into ingots in the furnace.</p></div><div class="t" style="--c:var(--ember)"><h3>Ceramics &amp; Glass</h3><p>Crucibles, casting moulds, bricks.</p></div><div class="t" style="--c:var(--ember)"><h3>Lab</h3><p>Sulphur, saltpetre and other base materials.</p></div><div class="t" style="--c:var(--ember)"><h3>Farming</h3><p>Lay out beds, harvest, stock up.</p></div><div class="t" style="--c:var(--ember)"><h3>Minter</h3><p>Strikes the coins that are used for trade.</p></div></div><h3 class="nojs-h">Making</h3><div class="tabpanel" id="tp2" role="tabpanel" hidden><div class="t" style="--c:var(--patina)"><h3>Smithing</h3><p>Tools at the anvil, as a minigame.</p></div><div class="t" style="--c:var(--patina)"><h3>Gunsmith</h3><p>Weapons from individual parts.</p></div><div class="t" style="--c:var(--patina)"><h3>Mechanics</h3><p>Engines and vehicles.</p></div><div class="t" style="--c:var(--patina)"><h3>Building</h3><p>Huts, houses, walls.</p></div></div><h3 class="nojs-h">Outdoors</h3><div class="tabpanel" id="tp3" role="tabpanel" hidden><div class="t" style="--c:var(--glow)"><h3>Survival</h3><p>Make fire, improvised tools, the first days.</p></div><div class="t" style="--c:var(--glow)"><h3>Skills</h3><p>Fitness, stealth, ranged, melee, first aid: they improve through practice.</p></div></div></div>
+  <p class="rv" style="margin-top:30px"><a class="btn ghost" href="werkbuch-en.html">Read the handbook</a></p>
 </div></section>
 
-<section class="board" id="shop"><div class="wrap">
-  <div class="sec-head rv"><span class="no">02</span><h2>Support the server</h2><p>The mod is free. If you want to help us, you can buy packages that change nothing about the game. Sales begin once the talks with Bohemia Interactive are done.</p></div>
-  <div class="menu">
-    <ul class="price-list rv">
-      <li><div class="row"><h3>Reserved spot<span class="badge">Preview</span></h3><span class="dots"></span><span class="pr">—<s>Price TBA</s></span></div><p>Your place in season 0 is safe, even when the waves fill up. You start on the same day as everyone else in your wave.</p></li>
-      <li><div class="row"><h3>Supporter<span class="badge">Preview</span></h3><span class="dots"></span><span class="pr">—<s>Price TBA</s></span></div><p>Discord role, a name plate in chat and a place on the credits wall.</p></li>
-      <li><div class="row"><h3>Skins<span class="badge">Preview</span></h3><span class="dots"></span><span class="pr">—<s>Price TBA</s></span></div><p>Clothing, weapon finish, banners for your base, your own master's mark design. Looks only, the stats stay the same.</p></li>
-      <li><div class="row"><h3>Queue<span class="badge">under review</span></h3><span class="dots"></span><span class="pr">—<s>Price TBA</s></span></div><p>First in line when the server is full. Only happens if Bohemia approves it.</p></li>
-    </ul>
-    <aside class="fair rv">
-      <h3>Our promise</h3>
-      <ul>
-        <li>Everything paid is looks, recognition or comfort when logging in.</li>
-        <li class="no">No weapons, ammo, vehicles, materials or coins.</li>
-        <li class="no">No XP boost, no recipes, no bigger base.</li>
-        <li>If you buy nothing, you miss nothing in the game.</li>
-      </ul>
-      <a class="btn dark" href="shop-en.html" style="font-size:17px;padding:13px 18px">All details</a>
-      <span class="mono">Bohemia Interactive's monetisation rules apply.</span>
-    </aside>
+<section id="shop" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="eyebrow mono rv">Support</div>
+  <h2 class="sec-title rv">Support the server</h2>
+  <p class="sec-lead rv" style="margin-bottom:34px">The mod is free. If you want to help us, you can buy packages that change nothing about the game. Sales begin once the talks with Bohemia Interactive are done.</p>
+  <div class="packs rv"><div class="pack"><span class="tag-p">Preview</span><h3>Reserved spot</h3><p>Your place in season 0 is safe, even when the waves fill up. You start on the same day as everyone in your wave.</p><div class="price">—<s>Price TBA</s></div></div><div class="pack"><span class="tag-p">Preview</span><h3>Supporter</h3><p>Discord role, a name plate in chat and a place on the credits wall.</p><div class="price">—<s>Price TBA</s></div></div><div class="pack"><span class="tag-p">Preview</span><h3>Skins</h3><p>Clothing, weapon finish, base banners, your own master's mark. Looks only, the stats stay the same.</p><div class="price">—<s>Price TBA</s></div></div><div class="pack"><span class="tag-p">under review</span><h3>Queue</h3><p>First in line when the server is full. Only happens if Bohemia approves it.</p><div class="price">—<s>Price TBA</s></div></div></div>
+  <div class="promise rv">
+    <div><h3>What always holds</h3><ul><li>Everything paid is looks, recognition or comfort when logging in.</li><li>If you buy nothing, you miss nothing in the game.</li></ul></div>
+    <div><h3>What you never buy</h3><ul><li class="no">Weapons, ammo, vehicles, materials, coins</li><li class="no">XP boosts, recipes, bigger bases</li></ul></div>
+    <div><a class="btn dark" href="shop-en.html" style="font-size:16px;padding:14px 22px">All details</a><div class="mono" style="color:var(--muted);margin-top:10px;font-size:.6em;max-width:16em">Bohemia Interactive's monetisation rules apply.</div></div>
   </div>
 </div></section>
 
-<section id="werkbuch"><div class="wrap">
-  <div class="sec-head rv"><span class="no">03</span><h2>The handbook</h2><p>Read up on how the crafting works. Four groups, 14 professions, five quality grades.</p></div>
-  <div class="guilds rv">
-    <a class="guild g1" href="werkbuch-en.html#berufe"><header><h3>Raw materials</h3><span class="mono">4</span></header><div class="body"><p>Everything you take from the ground, the forest and the wild.</p><ul><li>Mining</li><li>Prospecting</li><li>Forestry &amp; Resin</li><li>Hunting &amp; Tanning</li></ul></div></a>
-    <a class="guild g2" href="werkbuch-en.html#berufe"><header><h3>Refining</h3><span class="mono">5</span></header><div class="body"><p>Ore becomes ingots, clay becomes crucibles, silver becomes coins.</p><ul><li>Smelting</li><li>Ceramics &amp; Glass</li><li>Lab</li><li>Farming</li><li>Minter</li></ul></div></a>
-    <a class="guild g3" href="werkbuch-en.html#berufe"><header><h3>Making</h3><span class="mono">4</span></header><div class="body"><p>At the anvil, the workbench, the building site.</p><ul><li>Smithing</li><li>Gunsmith</li><li>Mechanics</li><li>Building</li></ul></div></a>
-    <a class="guild g4" href="werkbuch-en.html#berufe"><header><h3>Outdoors</h3><span class="mono">1 + 5</span></header><div class="body"><p>One profession and five skills that improve with practice.</p><ul><li>Survival</li><li>Fitness</li><li>Stealth</li><li>Ranged &amp; melee</li><li>First aid</li></ul></div></a>
+<section class="band" id="whitelist"><div class="wrap">
+  <div class="rv">
+    <div class="eyebrow mono">Season 0</div>
+    <h2>Whitelist</h2>
+    <p style="max-width:30em;color:#d6ccbc">At launch only registered players get onto the server, in waves. We're two people and want to be able to help everyone on the first evening instead of drowning in chaos.</p>
+    <p><a class="btn" href="https://discord.gg/mjJFGwnTns">Sign up in Discord</a></p>
+    <p class="mono" style="color:var(--muted);max-width:30em;font-size:.68em;line-height:1.8;text-transform:none;letter-spacing:.06em">English and German on the server. Safe spots are in the <a href="shop-en.html">shop preview</a>.</p>
   </div>
-  <div class="scale rv">
-    <h3>The five quality grades</h3>
-    <ol class="rungs">
-  <li>Impure<small>common</small></li><li>Solid<small>&nbsp;</small></li><li>Pure<small>&nbsp;</small></li><li>High-purity<small>&nbsp;</small></li><li>Flawless<small>rare</small></li>
-</ol>
-  </div>
-  <p class="rv" style="margin-top:26px"><a class="btn dark" href="werkbuch-en.html">Read the handbook</a></p>
-</div></section>
-
-<section class="ticket-sec" id="whitelist"><div class="wrap">
-  <div class="ticket rv">
-    <div class="main">
-      <span class="mono">Work order · Season 0</span>
-      <h2>Whitelist</h2>
-      <p>At launch only registered players get onto the server, in waves. We're two people and want to be able to help everyone on the first evening instead of drowning in chaos.</p>
-      <ol>
-        <li>Join the Discord</li>
-        <li>Read the rules, there are only seven</li>
-        <li>In the “whitelist” channel click <b>Sign up</b> and enter your Steam64 ID (17 digits, you find it on steamid.io)</li>
-      </ol>
-      <a class="btn" href="https://discord.gg/mjJFGwnTns">Sign up in Discord</a>
-    </div>
-    <div class="side">
-      <span class="mono">Season</span><div class="big">0</div>
-      <p style="margin:0;font-size:.95em">English and German on the server. Want to be sure you're in? Have a look at the <a href="shop-en.html">reserved spot</a>.</p>
-    </div>
-  </div>
+  <ol class="steps rv"><li><b>Join the Discord</b><span>All you need is a Discord account.</span></li><li><b>Read the rules</b><span>There are only seven.</span></li><li><b>Sign up</b><span>In the “whitelist” channel click <b style="display:inline;font:inherit;text-transform:none;letter-spacing:0">Sign up</b> and enter your Steam64 ID (17 digits, you find it on steamid.io).</span></li></ol>
 </div></section>
 
 <section id="fragen"><div class="wrap">
-  <div class="sec-head rv"><span class="no">04</span><h2>Questions</h2></div>
-  <div class="faq rv">
-    <details><summary>When does season 0 start?</summary><p>As soon as the date is fixed, it will be posted in Discord under announcements. Turn on the ping and you won't miss it.</p></details>
-    <details><summary>What does the mod cost?</summary><p>Nothing. To support us there will be optional packages that change nothing about the game. They're described in the <a href="shop-en.html">shop preview</a>.</p></details>
-    <details><summary>Can I play solo?</summary><p>Yes. Every chain can be completed alone. A group just gets there faster.</p></details>
-    <details><summary>Are there traders or starting money?</summary><p>No. Everything that exists was made by a player. Trading happens between players.</p></details>
-    <details><summary>Do I need the whitelist?</summary><p>Yes, at launch. You can sign up in Discord.</p></details>
-    <details><summary>Does it run on PlayStation or Xbox?</summary><p>Sorry, no. DayZ mods are PC only.</p></details>
-  </div>
+  <div class="eyebrow mono rv">Questions</div>
+  <h2 class="sec-title rv">Questions</h2>
+  <div class="faq rv"><details><summary>When does season 0 start?</summary><p>As soon as the date is fixed, it will be posted in Discord under announcements. Turn on the ping and you won't miss it.</p></details><details><summary>What does the mod cost?</summary><p>Nothing. To support us there will be optional packages that change nothing about the game. They're described in the <a href="shop-en.html">shop preview</a>.</p></details><details><summary>Can I play solo?</summary><p>Yes. Every chain can be completed alone. A group just gets there faster.</p></details><details><summary>Are there traders or starting money?</summary><p>No. Everything that exists was made by a player. Trading happens between players.</p></details><details><summary>Do I need the whitelist?</summary><p>Yes, at launch. You can sign up in Discord.</p></details><details><summary>Does it run on PlayStation or Xbox?</summary><p>Sorry, no. DayZ mods are PC only.</p></details></div>
 </div></section>
+
+<script>
+(function(){
+  // Glut-Funken im Titelbild
+  var c=document.getElementById('embers');
+  if(c && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var x=c.getContext('2d'),W,H,P=[],N=innerWidth<700?26:60;
+    function size(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}
+    function mk(r){return {x:Math.random()*W,y:r?H+10:Math.random()*H,v:.25+Math.random()*.9,s:.6+Math.random()*1.9,d:(Math.random()-.5)*.35,a:.25+Math.random()*.7,t:Math.random()*6}}
+    size();for(var i=0;i<N;i++)P.push(mk(false));addEventListener('resize',size);
+    var run=true;new IntersectionObserver(function(e){run=e[0].isIntersecting}).observe(c);
+    (function f(){if(run){x.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var p=P[i];p.y-=p.v;p.x+=p.d+Math.sin(p.t+=.02)*.25;
+      if(p.y<-10||p.x<-10||p.x>W+10){P[i]=mk(true);continue}
+      var g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.s*4);g.addColorStop(0,'rgba(255,190,100,'+p.a+')');g.addColorStop(1,'rgba(255,107,33,0)');
+      x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.s*4,0,6.3);x.fill()}}requestAnimationFrame(f)})();
+  }
+  // Video nur, wenn Datensparmodus aus ist; pausiert außerhalb des Bildschirms
+  var v=document.querySelector('.hero video');
+  if(v){var sd=navigator.connection&&navigator.connection.saveData;if(sd){v.remove()}else{
+    new IntersectionObserver(function(e){e[0].isIntersecting?v.play().catch(function(){}):v.pause()}).observe(v)}}
+  // Berufe-Reiter
+  var tabs=document.querySelectorAll('.tabs button'),panels=document.querySelectorAll('.tabpanel');
+  tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(t){t.setAttribute('aria-selected',t===b)});
+    panels.forEach(function(p){p.hidden=p.id!==b.getAttribute('aria-controls')})})});
+  // Bildbetrachter
+  var dlg=document.getElementById('lb');
+  if(dlg&&dlg.showModal){document.querySelectorAll('.gal a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
+    dlg.querySelector('img').src=a.href;dlg.querySelector('img').alt=a.dataset.cap;dlg.querySelector('p').textContent=a.dataset.cap;dlg.showModal()})});
+    dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.tagName==='BUTTON')dlg.close()})}
+})();
+</script>
+
 
 </main>
 <footer><div class="wrap">

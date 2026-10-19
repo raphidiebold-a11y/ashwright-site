@@ -11,7 +11,7 @@
 <link rel="alternate" hreflang="en" href="https://ashwright.de/en.html">
 <meta property="og:title" content="ASHWRIGHT – DayZ-Mod ohne NPC-Händler"><meta property="og:description" content="ASHWRIGHT ist eine DayZ-Mod ohne NPC-Händler: Erz abbauen, schmelzen, schmieden und an andere Spieler verkaufen. Deutscher und englischer Server, Whitelist über Discord."><meta property="og:image" content="https://ashwright.de/img/hero.webp"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261019b">
+<link rel="stylesheet" href="style.css?v=20261019c">
 <script>document.documentElement.classList.add('js')</script>
 
 </head>
@@ -28,109 +28,115 @@
 </div></header>
 <main id="main">
 
-<section class="hero"><div class="wrap">
-  <div>
+<section class="hero" style="padding:0">
+  <img class="poster" src="media/hero-poster.webp" alt="" width="1600" height="670">
+  <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.webp" aria-hidden="true"><source src="media/hero.mp4" type="video/mp4"></video>
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <div class="wrap">
     <div class="kicker mono"><span>DayZ-Mod</span><span>Karte Antoria</span><span>Deutsch &amp; English</span></div>
     <h1>ASH<span class="o">WRIGHT</span></h1>
-    <p class="promise">Ein DayZ-Server ohne NPC-Händler. Du baust <b>Erz</b> ab, schmilzt es im Ofen, den du selbst gemauert hast, schmiedest dein Werkzeug und <b>handelst mit anderen Spielern</b>. Allein geht das auch.</p>
-    <div class="cta">
-      <a class="btn" href="#whitelist">Whitelist-Platz sichern</a>
-      <a class="btn ghost" href="https://discord.gg/mjJFGwnTns">Discord</a>
-      <small>Saison 0 · Early Access · Freischaltung in Wellen</small>
-    </div>
+    <p class="lede">Ein DayZ-Server ohne NPC-Händler. Du baust <b>Erz</b> ab, schmilzt es im Ofen, den du selbst gemauert hast, schmiedest dein Werkzeug und <b>handelst mit anderen Spielern</b>. Allein geht das auch.</p>
+    <div class="cta"><a class="btn" href="#whitelist">Whitelist-Platz sichern</a><a class="btn ghost" href="https://discord.gg/mjJFGwnTns">Discord beitreten</a></div>
   </div>
-  <figure class="plate" style="margin:0">
-    <span class="tag t1">Eisen · <b>rostrot gebändert</b></span>
-    <span class="tag t2">Kupfer · <b>grün angelaufen</b></span>
-    <span class="tag t3">Zinn · <b>seltener</b></span>
-    <img src="img/trio.webp" width="1400" height="787" alt="Drei Erzvorkommen auf einer Wiese bei Dämmerung: Eisen, Kupfer und Zinn">
-    <div class="stamp" aria-hidden="true">ASH<small>MEISTER</small></div>
-  </figure>
+  <div class="facts"><div class="wrap"><div><b>Keine Händler</b><span>Alles hat ein Spieler hergestellt</span></div><div><b>14 Berufe</b><span>Vom Bergbau bis zum Büchsenmacher</span></div><div><b>Solo spielbar</b><span>Handel spart Zeit, mehr nicht</span></div><div><b>Saison 0</b><span>Early Access, Freischaltung in Wellen</span></div></div></div>
+</section>
+
+<section id="spiel"><div class="wrap">
+  <div class="eyebrow mono rv">Das Spiel</div>
+  <div class="feature">
+  <div class="txt rv"><div class="num">01</div><h2>Kein Erz spawnt zufällig</h2><p>Jedes Vorkommen liegt da, wo es geologisch hingehört, berechnet aus den echten Kartendaten: Gestein, Gelände, Wasser und Hang. Erz wächst in Echtzeit nach, und deine Hacke entscheidet, was du abbauen kannst. Ist sie zu weich, prallt sie ab.</p><a class="more" href="werkbuch.html#erze">Mehr zu Erzen</a></div>
+  <figure class="shot rv"><img src="media/shot-erz.webp" width="1600" height="670" loading="lazy" alt="Ein Brocken bricht unter der Hacke"><figcaption class="mono">Ein Brocken bricht unter der Hacke</figcaption></figure>
+</div>
+  <div class="feature rev">
+  <div class="txt rv"><div class="num">02</div><h2>Erz rein, Kohle drauf, Blasebalg</h2><p>Der Ofen schmilzt erst, wenn er heiß genug ist. Die Holzkohle brennst du im Meiler, den Lehmofen mauerst du selbst. Aus Kupfer und Zinn wird Bronze, und mit Bronze-Werkzeug kommst du an das Eisen.</p><a class="more" href="werkbuch.html#ofen">Mehr zum Schmelzen</a></div>
+  <figure class="shot rv"><img src="img/furnace.webp" width="1600" height="670" loading="lazy" alt="Der Schmelzofen aus Lehm und Stein"><figcaption class="mono">Der Schmelzofen aus Lehm und Stein</figcaption></figure>
+</div>
+  <div class="feature">
+  <div class="txt rv"><div class="num">03</div><h2>14 Berufe, fünf Güteklassen</h2><p>Jede Ader hat eine Güte, und die steckt später im Barren und im Werkzeug. Wie gut etwas wird, hängt am Erz und an der Erfahrung dessen, der es herstellt. Da wird nichts ausgewürfelt.</p><a class="more" href="werkbuch.html#berufe">Mehr zu den Berufen</a><div class="scale rv"><h3>Die fünf Güteklassen</h3><ol class="rungs"><li>Unrein<small>häufig</small></li><li>Solide<small>&nbsp;</small></li><li>Rein<small>&nbsp;</small></li><li>Hochrein<small>&nbsp;</small></li><li>Makellos<small>selten</small></li></ol></div></div>
+  <figure class="shot rv"><img src="media/shot-schmiede.webp" width="1600" height="670" loading="lazy" alt="Schmiede in der Dämmerung"><figcaption class="mono">Schmiede in der Dämmerung</figcaption></figure>
+</div>
+  <div class="feature rev">
+  <div class="txt rv"><div class="num">04</div><h2>Kein Händler, kein Startgeld</h2><p>Alles, was es gibt, hat ein Spieler hergestellt. Wer sich auf einen Beruf spezialisiert, verkauft an andere. Wer lieber allein spielt, kommt auch durch: Handel spart Zeit, mehr nicht. Außerhalb der Monuments gilt: erst reden, dann schießen.</p><a class="more" href="werkbuch.html#handel">Mehr zu Handel und PvP</a></div>
+  <figure class="shot rv"><img src="media/shot-viadukt.webp" width="1600" height="670" loading="lazy" alt="Antoria: Hütte vor dem Viadukt"><figcaption class="mono">Antoria: Hütte vor dem Viadukt</figcaption></figure>
+</div>
 </div></section>
 
-<div class="ticker" aria-hidden="true"><div><span>Keine NPC-Händler</span><span>■</span><span>Erz abbauen</span><span>■</span><span>Im Lehmofen schmelzen</span><span>■</span><span>Am Amboss schmieden</span><span>■</span><span>14 Berufe</span><span>■</span><span>Solo spielbar</span><span>■</span><span>Kein Startgeld</span><span>■</span><span>213 selbst gebaute Modelle</span><span>■</span><span>58 eigene Sounds</span><span>■</span><span>Erst reden, dann schießen</span><span>■</span><span>Keine NPC-Händler</span><span>■</span><span>Erz abbauen</span><span>■</span><span>Im Lehmofen schmelzen</span><span>■</span><span>Am Amboss schmieden</span><span>■</span><span>14 Berufe</span><span>■</span><span>Solo spielbar</span><span>■</span><span>Kein Startgeld</span><span>■</span><span>213 selbst gebaute Modelle</span><span>■</span><span>58 eigene Sounds</span><span>■</span><span>Erst reden, dann schießen</span><span>■</span></div></div>
+<section id="bilder" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="eyebrow mono rv">Bilder</div>
+  <h2 class="sec-title rv">Aus dem Spiel</h2>
+  <p class="sec-lead rv" style="margin-bottom:34px">Aufnahmen aus dem Spiel und Renders der selbst gebauten Modelle. Über 200 davon sind fertig.</p>
+  <div class="gal rv"><a href="media/shot-staub.webp" data-cap="Erz zerfällt unter der Hacke"><img src="media/shot-staub.webp" loading="lazy" alt="Erz zerfällt unter der Hacke"></a><a href="img/trio.webp" data-cap="Eisen, Kupfer, Zinn"><img src="img/trio.webp" loading="lazy" alt="Eisen, Kupfer, Zinn"></a><a href="media/shot-ofen.webp" data-cap="Ofen in der Dämmerung"><img src="media/shot-ofen.webp" loading="lazy" alt="Ofen in der Dämmerung"></a><a href="media/shot-sturm.webp" data-cap="Sturm über dem Viadukt"><img src="media/shot-sturm.webp" loading="lazy" alt="Sturm über dem Viadukt"></a><a href="img/shatter.webp" data-cap="Brocken im Render"><img src="img/shatter.webp" loading="lazy" alt="Brocken im Render"></a><a href="img/furnace.webp" data-cap="Lehmofen bei Nacht"><img src="img/furnace.webp" loading="lazy" alt="Lehmofen bei Nacht"></a></div>
+</div></section>
+<dialog class="lb" id="lb"><button type="button">Schließen</button><img alt=""><p></p></dialog>
 
-<section id="ablauf"><div class="wrap">
-  <div class="sec-head rv"><span class="no">01</span><h2>Vom Klick zum ersten Barren</h2><p>So kommst du auf den Server und was du dort als Erstes tust.</p></div>
-  <ol class="chain rv">
-    <li><div class="n">1</div><h3>Anmelden</h3><p>Im Discord auf „Anmelden“ klicken und deine Steam64-ID eintragen. Dauert eine Minute.</p></li>
-    <li><div class="n">2</div><h3>Freischalten</h3><p>Wir lassen Spieler in Wellen rein. Bist du dran, bekommst du die Rolle und eine Nachricht von mir.</p></li>
-    <li><div class="n">3</div><h3>Küste</h3><p>Du startest mit einer Notfalltasche, einer Stein-Hacke und einem Lagerfeuer. Mehr nicht.</p></li>
-    <li><div class="n">4</div><h3>Handwerk</h3><p>Erz finden, abbauen, schmelzen, schmieden. Was du nicht brauchst, verkaufst du.</p></li>
-  </ol>
+<section id="berufe"><div class="wrap">
+  <div class="eyebrow mono rv">Berufe</div>
+  <h2 class="sec-title rv">Wer willst du sein</h2>
+  <p class="sec-lead rv" style="margin-bottom:34px">Jede Arbeit bringt Erfahrung in ihrem Beruf. Du kannst alles lernen, aber alles zu beherrschen kostet sehr viel Zeit.</p>
+  <div class="rv"><div class="tabs" role="tablist"><button role="tab" aria-selected="true" aria-controls="tp0">Rohstoffe</button><button role="tab" aria-selected="false" aria-controls="tp1">Veredeln</button><button role="tab" aria-selected="false" aria-controls="tp2">Herstellen</button><button role="tab" aria-selected="false" aria-controls="tp3">Draußen</button></div><h3 class="nojs-h">Rohstoffe</h3><div class="tabpanel" id="tp0" role="tabpanel"><div class="t" style="--c:var(--steel)"><h3>Bergbau</h3><p>Erz abbauen, mit mehr Ausbeute je Stufe.</p></div><div class="t" style="--c:var(--steel)"><h3>Prospektion</h3><p>Vorkommen finden und einschätzen.</p></div><div class="t" style="--c:var(--steel)"><h3>Forst &amp; Harz</h3><p>Bäume fällen, Holz spalten, Harz sammeln.</p></div><div class="t" style="--c:var(--steel)"><h3>Jagd &amp; Gerben</h3><p>Fell, Leder, Sehnen und Fleisch.</p></div></div><h3 class="nojs-h">Veredeln</h3><div class="tabpanel" id="tp1" role="tabpanel" hidden><div class="t" style="--c:var(--ember)"><h3>Hüttenwesen</h3><p>Erz im Ofen zu Barren schmelzen.</p></div><div class="t" style="--c:var(--ember)"><h3>Keramik &amp; Glas</h3><p>Tiegel, Gussformen, Ziegel.</p></div><div class="t" style="--c:var(--ember)"><h3>Labor</h3><p>Schwefel, Salpeter und andere Grundstoffe.</p></div><div class="t" style="--c:var(--ember)"><h3>Landwirtschaft</h3><p>Beete anlegen, ernten, Vorräte anlegen.</p></div><div class="t" style="--c:var(--ember)"><h3>Münzer</h3><p>Prägt die Münzen, mit denen gehandelt wird.</p></div></div><h3 class="nojs-h">Herstellen</h3><div class="tabpanel" id="tp2" role="tabpanel" hidden><div class="t" style="--c:var(--patina)"><h3>Schmieden</h3><p>Werkzeug am Amboss, per Minispiel.</p></div><div class="t" style="--c:var(--patina)"><h3>Büchsenmacher</h3><p>Waffen aus Einzelteilen.</p></div><div class="t" style="--c:var(--patina)"><h3>Mechanik</h3><p>Motoren und Fahrzeuge.</p></div><div class="t" style="--c:var(--patina)"><h3>Bauen</h3><p>Hütten, Häuser, Mauern.</p></div></div><h3 class="nojs-h">Draußen</h3><div class="tabpanel" id="tp3" role="tabpanel" hidden><div class="t" style="--c:var(--glow)"><h3>Überleben</h3><p>Feuer machen, Behelfswerkzeug, die ersten Tage.</p></div><div class="t" style="--c:var(--glow)"><h3>Fertigkeiten</h3><p>Kondition, Schleichen, Fernkampf, Nahkampf, Erste Hilfe: werden durch Übung besser.</p></div></div></div>
+  <p class="rv" style="margin-top:30px"><a class="btn ghost" href="werkbuch.html">Werkbuch lesen</a></p>
 </div></section>
 
-<section class="board" id="shop"><div class="wrap">
-  <div class="sec-head rv"><span class="no">02</span><h2>Server unterstützen</h2><p>Die Mod ist kostenlos. Wer uns helfen will, kann Pakete kaufen, die nichts am Spiel ändern. Der Verkauf startet, sobald die Abstimmung mit Bohemia Interactive durch ist.</p></div>
-  <div class="menu">
-    <ul class="price-list rv">
-      <li><div class="row"><h3>Reservierter Platz<span class="badge">Vorschau</span></h3><span class="dots"></span><span class="pr">—<s>Preis folgt</s></span></div><p>Dein Platz in Saison 0 ist sicher, auch wenn die Wellen voll sind. Du startest am selben Tag wie alle anderen in deiner Welle.</p></li>
-      <li><div class="row"><h3>Supporter<span class="badge">Vorschau</span></h3><span class="dots"></span><span class="pr">—<s>Preis folgt</s></span></div><p>Discord-Rolle, Namensplakette beim Chat und ein Platz auf der Credits-Wand.</p></li>
-      <li><div class="row"><h3>Skins<span class="badge">Vorschau</span></h3><span class="dots"></span><span class="pr">—<s>Preis folgt</s></span></div><p>Kleidung, Waffen-Finish, Banner für deine Base, dein eigenes Meisterzeichen-Design. Nur Optik, die Werte bleiben gleich.</p></li>
-      <li><div class="row"><h3>Warteschlange<span class="badge">in Klärung</span></h3><span class="dots"></span><span class="pr">—<s>Preis folgt</s></span></div><p>Bei vollem Server zuerst rein. Gibt es nur, wenn Bohemia es freigibt.</p></li>
-    </ul>
-    <aside class="fair rv">
-      <h3>Unsere Zusage</h3>
-      <ul>
-        <li>Alles Bezahlte ist Optik, Anerkennung oder Komfort beim Einloggen.</li>
-        <li class="no">Keine Waffen, Munition, Fahrzeuge, Materialien oder Münzen.</li>
-        <li class="no">Kein Erfahrungs-Boost, keine Rezepte, keine größere Base.</li>
-        <li>Ohne Kauf verpasst du im Spiel nichts.</li>
-      </ul>
-      <a class="btn dark" href="shop.html" style="font-size:17px;padding:13px 18px">Alle Details</a>
-      <span class="mono">Es gelten die Monetarisierungs-Regeln von Bohemia Interactive.</span>
-    </aside>
+<section id="shop" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
+  <div class="eyebrow mono rv">Unterstützen</div>
+  <h2 class="sec-title rv">Server unterstützen</h2>
+  <p class="sec-lead rv" style="margin-bottom:34px">Die Mod ist kostenlos. Wer uns helfen will, kann Pakete kaufen, die nichts am Spiel ändern. Der Verkauf startet, sobald die Abstimmung mit Bohemia Interactive durch ist.</p>
+  <div class="packs rv"><div class="pack"><span class="tag-p">Vorschau</span><h3>Reservierter Platz</h3><p>Dein Platz in Saison 0 ist sicher, auch wenn die Wellen voll sind. Du startest am selben Tag wie alle in deiner Welle.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">Vorschau</span><h3>Supporter</h3><p>Discord-Rolle, Namensplakette im Chat und ein Platz auf der Credits-Wand.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">Vorschau</span><h3>Skins</h3><p>Kleidung, Waffen-Finish, Basen-Banner, dein eigenes Meisterzeichen. Nur Optik, die Werte bleiben gleich.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">in Klärung</span><h3>Warteschlange</h3><p>Bei vollem Server zuerst rein. Gibt es nur, wenn Bohemia es freigibt.</p><div class="price">—<s>Preis folgt</s></div></div></div>
+  <div class="promise rv">
+    <div><h3>Das gilt immer</h3><ul><li>Alles Bezahlte ist Optik, Anerkennung oder Komfort beim Einloggen.</li><li>Ohne Kauf verpasst du im Spiel nichts.</li></ul></div>
+    <div><h3>Das kaufst du nie</h3><ul><li class="no">Waffen, Munition, Fahrzeuge, Materialien, Münzen</li><li class="no">Erfahrungs-Boost, Rezepte, größere Basen</li></ul></div>
+    <div><a class="btn dark" href="shop.html" style="font-size:16px;padding:14px 22px">Alle Details</a><div class="mono" style="color:var(--muted);margin-top:10px;font-size:.6em;max-width:16em">Es gelten die Monetarisierungs-Regeln von Bohemia Interactive.</div></div>
   </div>
 </div></section>
 
-<section id="werkbuch"><div class="wrap">
-  <div class="sec-head rv"><span class="no">03</span><h2>Das Werkbuch</h2><p>Hier kannst du nachlesen, wie das Handwerk funktioniert. Vier Gruppen, 14 Berufe, fünf Güteklassen.</p></div>
-  <div class="guilds rv">
-    <a class="guild g1" href="werkbuch.html#berufe"><header><h3>Rohstoffe</h3><span class="mono">4</span></header><div class="body"><p>Alles, was du aus dem Boden, dem Wald und dem Wild holst.</p><ul><li>Bergbau</li><li>Prospektion</li><li>Forst &amp; Harz</li><li>Jagd &amp; Gerben</li></ul></div></a>
-    <a class="guild g2" href="werkbuch.html#berufe"><header><h3>Veredeln</h3><span class="mono">5</span></header><div class="body"><p>Aus Erz werden Barren, aus Ton Tiegel, aus Silber Münzen.</p><ul><li>Hüttenwesen</li><li>Keramik &amp; Glas</li><li>Labor</li><li>Landwirtschaft</li><li>Münzer</li></ul></div></a>
-    <a class="guild g3" href="werkbuch.html#berufe"><header><h3>Herstellen</h3><span class="mono">4</span></header><div class="body"><p>Am Amboss, an der Werkbank, auf der Baustelle.</p><ul><li>Schmieden</li><li>Büchsenmacher</li><li>Mechanik</li><li>Bauen</li></ul></div></a>
-    <a class="guild g4" href="werkbuch.html#berufe"><header><h3>Draußen</h3><span class="mono">1 + 5</span></header><div class="body"><p>Ein Beruf und fünf Fertigkeiten, die mit Übung besser werden.</p><ul><li>Überleben</li><li>Kondition</li><li>Schleichen</li><li>Fern- &amp; Nahkampf</li><li>Erste Hilfe</li></ul></div></a>
+<section class="band" id="whitelist"><div class="wrap">
+  <div class="rv">
+    <div class="eyebrow mono">Saison 0</div>
+    <h2>Whitelist</h2>
+    <p style="max-width:30em;color:#d6ccbc">Zum Start lassen wir nur angemeldete Spieler auf den Server, in Wellen. Wir sind zu zweit und wollen am ersten Abend jedem helfen können, statt im Chaos unterzugehen.</p>
+    <p><a class="btn" href="https://discord.gg/mjJFGwnTns">Im Discord anmelden</a></p>
+    <p class="mono" style="color:var(--muted);max-width:30em;font-size:.68em;line-height:1.8;text-transform:none;letter-spacing:.06em">Deutsch und Englisch auf dem Server. Sichere Plätze gibt es in der <a href="shop.html">Shop-Vorschau</a>.</p>
   </div>
-  <div class="scale rv">
-    <h3>Die fünf Güteklassen</h3>
-    <ol class="rungs">
-  <li>Unrein<small>häufig</small></li><li>Solide<small>&nbsp;</small></li><li>Rein<small>&nbsp;</small></li><li>Hochrein<small>&nbsp;</small></li><li>Makellos<small>selten</small></li>
-</ol>
-  </div>
-  <p class="rv" style="margin-top:26px"><a class="btn dark" href="werkbuch.html">Werkbuch lesen</a></p>
-</div></section>
-
-<section class="ticket-sec" id="whitelist"><div class="wrap">
-  <div class="ticket rv">
-    <div class="main">
-      <span class="mono">Auftragszettel · Saison 0</span>
-      <h2>Whitelist</h2>
-      <p>Zum Start lassen wir nur angemeldete Spieler auf den Server, in Wellen. Wir sind zu zweit und wollen am ersten Abend jedem helfen können, statt im Chaos unterzugehen.</p>
-      <ol>
-        <li>Discord beitreten</li>
-        <li>Regeln lesen, es sind sieben</li>
-        <li>Im Kanal „whitelist“ auf <b>Anmelden</b> klicken, Steam64-ID eintragen (17 Ziffern, steht auf steamid.io)</li>
-      </ol>
-      <a class="btn" href="https://discord.gg/mjJFGwnTns">Im Discord anmelden</a>
-    </div>
-    <div class="side">
-      <span class="mono">Saison</span><div class="big">0</div>
-      <p style="margin:0;font-size:.95em">Deutsch und Englisch auf dem Server. Du willst sicher dabei sein? Wirf einen Blick auf den <a href="shop.html">reservierten Platz</a>.</p>
-    </div>
-  </div>
+  <ol class="steps rv"><li><b>Discord beitreten</b><span>Du brauchst nur einen Discord-Account.</span></li><li><b>Regeln lesen</b><span>Es sind sieben.</span></li><li><b>Anmelden</b><span>Im Kanal „whitelist“ auf <b style="display:inline;font:inherit;text-transform:none;letter-spacing:0">Anmelden</b> klicken und die Steam64-ID eintragen (17 Ziffern, steht auf steamid.io).</span></li></ol>
 </div></section>
 
 <section id="fragen"><div class="wrap">
-  <div class="sec-head rv"><span class="no">04</span><h2>Fragen</h2></div>
-  <div class="faq rv">
-    <details><summary>Wann startet Saison 0?</summary><p>Sobald der Termin feststeht, steht er im Discord unter Ankündigungen. Wer den Ping dafür aktiviert, verpasst ihn nicht.</p></details>
-    <details><summary>Was kostet die Mod?</summary><p>Nichts. Zur Unterstützung wird es freiwillige Pakete geben, die nichts am Spiel ändern. Sie sind in der <a href="shop.html">Shop-Vorschau</a> beschrieben.</p></details>
-    <details><summary>Kann ich allein spielen?</summary><p>Ja. Jede Kette lässt sich solo durchspielen. In der Gruppe geht es nur schneller.</p></details>
-    <details><summary>Gibt es Händler oder Startgeld?</summary><p>Nein. Alles, was es gibt, hat ein Spieler hergestellt. Gehandelt wird unter Spielern.</p></details>
-    <details><summary>Brauche ich die Whitelist?</summary><p>Ja, zum Start. Anmelden kannst du dich im Discord.</p></details>
-    <details><summary>Läuft das auf PlayStation oder Xbox?</summary><p>Leider nein. DayZ-Mods gibt es nur auf dem PC.</p></details>
-  </div>
+  <div class="eyebrow mono rv">Fragen</div>
+  <h2 class="sec-title rv">Fragen</h2>
+  <div class="faq rv"><details><summary>Wann startet Saison 0?</summary><p>Sobald der Termin feststeht, steht er im Discord unter Ankündigungen. Wer den Ping dafür aktiviert, verpasst ihn nicht.</p></details><details><summary>Was kostet die Mod?</summary><p>Nichts. Zur Unterstützung wird es freiwillige Pakete geben, die nichts am Spiel ändern. Sie sind in der <a href="shop.html">Shop-Vorschau</a> beschrieben.</p></details><details><summary>Kann ich allein spielen?</summary><p>Ja. Jede Kette lässt sich solo durchspielen. In der Gruppe geht es nur schneller.</p></details><details><summary>Gibt es Händler oder Startgeld?</summary><p>Nein. Alles, was es gibt, hat ein Spieler hergestellt. Gehandelt wird unter Spielern.</p></details><details><summary>Brauche ich die Whitelist?</summary><p>Ja, zum Start. Anmelden kannst du dich im Discord.</p></details><details><summary>Läuft das auf PlayStation oder Xbox?</summary><p>Leider nein. DayZ-Mods gibt es nur auf dem PC.</p></details></div>
 </div></section>
+
+<script>
+(function(){
+  // Glut-Funken im Titelbild
+  var c=document.getElementById('embers');
+  if(c && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var x=c.getContext('2d'),W,H,P=[],N=innerWidth<700?26:60;
+    function size(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}
+    function mk(r){return {x:Math.random()*W,y:r?H+10:Math.random()*H,v:.25+Math.random()*.9,s:.6+Math.random()*1.9,d:(Math.random()-.5)*.35,a:.25+Math.random()*.7,t:Math.random()*6}}
+    size();for(var i=0;i<N;i++)P.push(mk(false));addEventListener('resize',size);
+    var run=true;new IntersectionObserver(function(e){run=e[0].isIntersecting}).observe(c);
+    (function f(){if(run){x.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var p=P[i];p.y-=p.v;p.x+=p.d+Math.sin(p.t+=.02)*.25;
+      if(p.y<-10||p.x<-10||p.x>W+10){P[i]=mk(true);continue}
+      var g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.s*4);g.addColorStop(0,'rgba(255,190,100,'+p.a+')');g.addColorStop(1,'rgba(255,107,33,0)');
+      x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.s*4,0,6.3);x.fill()}}requestAnimationFrame(f)})();
+  }
+  // Video nur, wenn Datensparmodus aus ist; pausiert außerhalb des Bildschirms
+  var v=document.querySelector('.hero video');
+  if(v){var sd=navigator.connection&&navigator.connection.saveData;if(sd){v.remove()}else{
+    new IntersectionObserver(function(e){e[0].isIntersecting?v.play().catch(function(){}):v.pause()}).observe(v)}}
+  // Berufe-Reiter
+  var tabs=document.querySelectorAll('.tabs button'),panels=document.querySelectorAll('.tabpanel');
+  tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(t){t.setAttribute('aria-selected',t===b)});
+    panels.forEach(function(p){p.hidden=p.id!==b.getAttribute('aria-controls')})})});
+  // Bildbetrachter
+  var dlg=document.getElementById('lb');
+  if(dlg&&dlg.showModal){document.querySelectorAll('.gal a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
+    dlg.querySelector('img').src=a.href;dlg.querySelector('img').alt=a.dataset.cap;dlg.querySelector('p').textContent=a.dataset.cap;dlg.showModal()})});
+    dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.tagName==='BUTTON')dlg.close()})}
+})();
+</script>
+
 
 </main>
 <footer><div class="wrap">
