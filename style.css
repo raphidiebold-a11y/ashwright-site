@@ -42,7 +42,8 @@ a{color:inherit}
 .bar nav a:hover,.bar nav a[aria-current]{opacity:1;border-color:var(--ember)}
 .bar .go{background:var(--ember);color:var(--ink);opacity:1;padding:8px 14px;border:0;font-weight:700}
 .bar .go:hover{background:var(--glow);border:0}
-@media(max-width:760px){.bar nav a:not(.go){display:none}.bar .go{margin-left:auto}}
+.bar nav a.lang{border:2px solid var(--paper);padding:4px 8px;opacity:.9}.bar nav a.lang:hover{background:var(--paper);color:var(--ink)}
+@media(max-width:760px){.bar nav a:not(.go):not(.lang){display:none}.bar nav{margin-left:auto}.bar .go{margin-left:0}}
 
 /* ---------- Knöpfe ---------- */
 .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border:3px solid var(--ink);background:var(--ember);color:var(--ink);
