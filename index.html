@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ASHWRIGHT – DayZ-Mod ohne NPC-Händler</title>
-<meta name="description" content="ASHWRIGHT ist eine DayZ-Mod ohne NPC-Händler: Erz abbauen, schmelzen, schmieden und an andere Spieler verkaufen. Deutscher und englischer Server, Whitelist über Discord.">
+<title>ASHWRIGHT â€“ DayZ-Mod: Endzeit, Handwerk, Basebau</title>
+<meta name="description" content="ASHWRIGHT ist eine DayZ-Mod fÃ¼r die Zeit nach dem Zusammenbruch: Erz abbauen, schmieden, ein gemÃ¼tliches Haus bauen und alles selbst herstellen. Deutscher und englischer Server, Whitelist Ã¼ber Discord.">
 
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="canonical" href="https://ashwright.de/">
 <link rel="alternate" hreflang="en" href="https://ashwright.de/en.html">
-<meta property="og:title" content="ASHWRIGHT – DayZ-Mod ohne NPC-Händler"><meta property="og:description" content="ASHWRIGHT ist eine DayZ-Mod ohne NPC-Händler: Erz abbauen, schmelzen, schmieden und an andere Spieler verkaufen. Deutscher und englischer Server, Whitelist über Discord."><meta property="og:image" content="https://ashwright.de/img/hero.webp"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="ASHWRIGHT â€“ DayZ-Mod: Endzeit, Handwerk, Basebau"><meta property="og:description" content="ASHWRIGHT ist eine DayZ-Mod fÃ¼r die Zeit nach dem Zusammenbruch: Erz abbauen, schmieden, ein gemÃ¼tliches Haus bauen und alles selbst herstellen. Deutscher und englischer Server, Whitelist Ã¼ber Discord."><meta property="og:image" content="https://ashwright.de/img/hero.webp"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261019c">
+<link rel="stylesheet" href="style.css?v=20261019d">
 <script>document.documentElement.classList.add('js')</script>
 
 </head>
@@ -19,7 +19,7 @@
 <a class="skip" href="#main">Zum Inhalt</a>
 <header class="bar"><div class="wrap">
   <a class="brand" href="./"><i>A</i>ASHWRIGHT</a>
-  <nav aria-label="Hauptmenü">
+  <nav aria-label="HauptmenÃ¼">
     <a href="werkbuch.html">Werkbuch</a>
     <a href="shop.html">Shop</a>
     <a class="lang" href="en.html" hreflang="en" lang="en" title="English">EN</a>
@@ -33,31 +33,33 @@
   <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.webp" aria-hidden="true"><source src="media/hero.mp4" type="video/mp4"></video>
   <canvas id="embers" aria-hidden="true"></canvas>
   <div class="wrap">
-    <div class="kicker mono"><span>DayZ-Mod</span><span>Karte Antoria</span><span>Deutsch &amp; English</span></div>
+    <div class="kicker mono"><span>DayZ-Mod</span><span>Endzeit</span><span>Karte Antoria</span></div>
     <h1>ASH<span class="o">WRIGHT</span></h1>
-    <p class="lede">Ein DayZ-Server ohne NPC-Händler. Du baust <b>Erz</b> ab, schmilzt es im Ofen, den du selbst gemauert hast, schmiedest dein Werkzeug und <b>handelst mit anderen Spielern</b>. Allein geht das auch.</p>
+    <p class="lede">Antoria nach dem Zusammenbruch. Du startest mit einer Stein-Hacke und stellst alles selbst her: Werkzeug, Waffen, Kleidung und ein Haus mit Kamin, in dem du die Nacht abwartest. Allein oder mit anderen, auf Deutsch und Englisch.</p>
     <div class="cta"><a class="btn" href="#whitelist">Whitelist-Platz sichern</a><a class="btn ghost" href="https://discord.gg/mjJFGwnTns">Discord beitreten</a></div>
   </div>
-  <div class="facts"><div class="wrap"><div><b>Keine Händler</b><span>Alles hat ein Spieler hergestellt</span></div><div><b>14 Berufe</b><span>Vom Bergbau bis zum Büchsenmacher</span></div><div><b>Solo spielbar</b><span>Handel spart Zeit, mehr nicht</span></div><div><b>Saison 0</b><span>Early Access, Freischaltung in Wellen</span></div></div></div>
+  <div class="facts"><div class="wrap"><div><b>Endzeit</b><span>Antoria nach dem Zusammenbruch</span></div><div><b>Alles herstellbar</b><span>Vom Stein bis zur Waffe</span></div><div><b>Cozy Basebau</b><span>Kamin, Fensterläden, Einrichtung</span></div><div><b>Saison 0</b><span>Early Access, Freischaltung in Wellen</span></div></div></div>
 </section>
+
+<section class="memo"><div class="wrap">
+  <div class="note rv"><span class="mono">Zivilschutz · Merkblatt ZS 7</span><p>„Im Ernstfall versorgt sich die Insel selbst.“</p><span class="stamp-s mono" aria-hidden="true">ZS 7</span></div>
+  <p class="memo-s rv">So beginnt das Merkblatt, das jede neue Figur in der Jacke trägt.</p>
+</div></section>
 
 <section id="spiel"><div class="wrap">
   <div class="eyebrow mono rv">Das Spiel</div>
   <div class="feature">
-  <div class="txt rv"><div class="num">01</div><h2>Kein Erz spawnt zufällig</h2><p>Jedes Vorkommen liegt da, wo es geologisch hingehört, berechnet aus den echten Kartendaten: Gestein, Gelände, Wasser und Hang. Erz wächst in Echtzeit nach, und deine Hacke entscheidet, was du abbauen kannst. Ist sie zu weich, prallt sie ab.</p><a class="more" href="werkbuch.html#erze">Mehr zu Erzen</a></div>
+  <div class="txt rv"><div class="num">01</div><h2>Die Insel nach dem Zusammenbruch</h2><p>Antoria ist menschenleer. Der Hafen liegt verlassen da, auf der Küstenstraße stehen Infizierte, und die Nacht wird dunkel. Ein Merkblatt des Zivilschutzes in der Jacke sagt dir, wie es weitergeht: Die Insel muss sich selbst versorgen, und das fängst du an.</p><a class="more" href="werkbuch.html#insel">Mehr zur Insel</a></div>
+  <figure class="shot rv"><img src="media/shot-sturm.webp" width="1600" height="670" loading="lazy" alt="Sturm über dem Viadukt"><figcaption class="mono">Sturm über dem Viadukt</figcaption></figure>
+</div><div class="feature rev">
+  <div class="txt rv"><div class="num">02</div><h2>Alles stellst du selbst her</h2><p>Vom Feldstein bis zur Handbüchse: Erz finden, abbauen, im Lehmofen zu Barren schmelzen, am Amboss schmieden. Jedes Vorkommen liegt da, wo es geologisch hingehört, und seine Güte steckt später im Werkzeug. Waffen setzt du aus Einzelteilen zusammen.</p><a class="more" href="werkbuch.html#erze">Mehr zum Handwerk</a></div>
   <figure class="shot rv"><img src="media/shot-erz.webp" width="1600" height="670" loading="lazy" alt="Ein Brocken bricht unter der Hacke"><figcaption class="mono">Ein Brocken bricht unter der Hacke</figcaption></figure>
-</div>
-  <div class="feature rev">
-  <div class="txt rv"><div class="num">02</div><h2>Erz rein, Kohle drauf, Blasebalg</h2><p>Der Ofen schmilzt erst, wenn er heiß genug ist. Die Holzkohle brennst du im Meiler, den Lehmofen mauerst du selbst. Aus Kupfer und Zinn wird Bronze, und mit Bronze-Werkzeug kommst du an das Eisen.</p><a class="more" href="werkbuch.html#ofen">Mehr zum Schmelzen</a></div>
-  <figure class="shot rv"><img src="img/furnace.webp" width="1600" height="670" loading="lazy" alt="Der Schmelzofen aus Lehm und Stein"><figcaption class="mono">Der Schmelzofen aus Lehm und Stein</figcaption></figure>
-</div>
-  <div class="feature">
-  <div class="txt rv"><div class="num">03</div><h2>14 Berufe, fünf Güteklassen</h2><p>Jede Ader hat eine Güte, und die steckt später im Barren und im Werkzeug. Wie gut etwas wird, hängt am Erz und an der Erfahrung dessen, der es herstellt. Da wird nichts ausgewürfelt.</p><a class="more" href="werkbuch.html#berufe">Mehr zu den Berufen</a><div class="scale rv"><h3>Die fünf Güteklassen</h3><ol class="rungs"><li>Unrein<small>häufig</small></li><li>Solide<small>&nbsp;</small></li><li>Rein<small>&nbsp;</small></li><li>Hochrein<small>&nbsp;</small></li><li>Makellos<small>selten</small></li></ol></div></div>
+</div><div class="feature">
+  <div class="txt rv"><div class="num">03</div><h2>Dein Haus, deine Stube<br><span class="tag-p" style="font-size:13px;letter-spacing:.16em">In Arbeit</span></h2><p>Aus Holz, Lehm und Stein baust du Hütte, Haus und Mauern. Fensterläden und Kamin machen aus einem Rohbau eine Stube, und wer einrichtet, bekommt Komfort. Draußen herrscht Endzeit, drinnen brennt dein Feuer.</p><a class="more" href="werkbuch.html#bauen">Mehr zum Bauen</a></div>
+  <figure class="shot rv"><img src="media/shot-viadukt.webp" width="1600" height="670" loading="lazy" alt="Eine Hütte am Fluss, noch im Bau"><figcaption class="mono">Eine Hütte am Fluss, noch im Bau</figcaption></figure>
+</div><div class="feature rev">
+  <div class="txt rv"><div class="num">04</div><h2>14 Berufe, fünf Güteklassen</h2><p>Wer sich auf einen Beruf spezialisiert, wird gebraucht und handelt mit anderen, denn alles, was es gibt, hat ein Spieler hergestellt. Wie gut etwas wird, hängt am Erz und an der Erfahrung dessen, der es herstellt. Alleine lässt sich jede Kette ebenfalls durchspielen.</p><a class="more" href="werkbuch.html#berufe">Mehr zu den Berufen</a><div class="scale rv"><h3>Die fünf Güteklassen</h3><ol class="rungs"><li>Unrein<small>häufig</small></li><li>Solide<small>&nbsp;</small></li><li>Rein<small>&nbsp;</small></li><li>Hochrein<small>&nbsp;</small></li><li>Makellos<small>selten</small></li></ol></div></div>
   <figure class="shot rv"><img src="media/shot-schmiede.webp" width="1600" height="670" loading="lazy" alt="Schmiede in der Dämmerung"><figcaption class="mono">Schmiede in der Dämmerung</figcaption></figure>
-</div>
-  <div class="feature rev">
-  <div class="txt rv"><div class="num">04</div><h2>Kein Händler, kein Startgeld</h2><p>Alles, was es gibt, hat ein Spieler hergestellt. Wer sich auf einen Beruf spezialisiert, verkauft an andere. Wer lieber allein spielt, kommt auch durch: Handel spart Zeit, mehr nicht. Außerhalb der Monuments gilt: erst reden, dann schießen.</p><a class="more" href="werkbuch.html#handel">Mehr zu Handel und PvP</a></div>
-  <figure class="shot rv"><img src="media/shot-viadukt.webp" width="1600" height="670" loading="lazy" alt="Antoria: Hütte vor dem Viadukt"><figcaption class="mono">Antoria: Hütte vor dem Viadukt</figcaption></figure>
 </div>
 </div></section>
 
@@ -80,11 +82,11 @@
 <section id="shop" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
   <div class="eyebrow mono rv">Unterstützen</div>
   <h2 class="sec-title rv">Server unterstützen</h2>
-  <p class="sec-lead rv" style="margin-bottom:34px">Die Mod ist kostenlos. Wer uns helfen will, kann Pakete kaufen, die nichts am Spiel ändern. Der Verkauf startet, sobald die Abstimmung mit Bohemia Interactive durch ist.</p>
-  <div class="packs rv"><div class="pack"><span class="tag-p">Vorschau</span><h3>Reservierter Platz</h3><p>Dein Platz in Saison 0 ist sicher, auch wenn die Wellen voll sind. Du startest am selben Tag wie alle in deiner Welle.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">Vorschau</span><h3>Supporter</h3><p>Discord-Rolle, Namensplakette im Chat und ein Platz auf der Credits-Wand.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">Vorschau</span><h3>Skins</h3><p>Kleidung, Waffen-Finish, Basen-Banner, dein eigenes Meisterzeichen. Nur Optik, die Werte bleiben gleich.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">in Klärung</span><h3>Warteschlange</h3><p>Bei vollem Server zuerst rein. Gibt es nur, wenn Bohemia es freigibt.</p><div class="price">—<s>Preis folgt</s></div></div></div>
+  <p class="sec-lead rv" style="margin-bottom:34px">Die Mod ist kostenlos. Wer uns helfen will, kann Pakete kaufen, die nur das Aussehen oder die Anerkennung betreffen. Der Verkauf startet, sobald die Abstimmung mit Bohemia Interactive durch ist.</p>
+  <div class="packs rv"><div class="pack"><span class="tag-p">Vorschau</span><h3>Reservierter Platz</h3><p>Dein Platz in Saison 0 ist sicher, auch wenn die Wellen voll sind. Du startest am selben Tag wie alle in deiner Welle.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">Vorschau</span><h3>Supporter</h3><p>Discord-Rolle, Namensplakette im Chat und ein Platz auf der Credits-Wand.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">Vorschau</span><h3>Skins</h3><p>Kleidung, Waffen-Finish, Basen-Banner, dein eigenes Meisterzeichen. Das Aussehen ändert sich, die Werte bleiben gleich.</p><div class="price">—<s>Preis folgt</s></div></div><div class="pack"><span class="tag-p">in Klärung</span><h3>Warteschlange</h3><p>Bei vollem Server zuerst rein. Kommt nur, wenn Bohemia es freigibt.</p><div class="price">—<s>Preis folgt</s></div></div></div>
   <div class="promise rv">
-    <div><h3>Das gilt immer</h3><ul><li>Alles Bezahlte ist Optik, Anerkennung oder Komfort beim Einloggen.</li><li>Ohne Kauf verpasst du im Spiel nichts.</li></ul></div>
-    <div><h3>Das kaufst du nie</h3><ul><li class="no">Waffen, Munition, Fahrzeuge, Materialien, Münzen</li><li class="no">Erfahrungs-Boost, Rezepte, größere Basen</li></ul></div>
+    <div><h3>Das bekommst du</h3><ul><li>Optik, Anerkennung und Komfort beim Einloggen.</li><li>Alles Spielerische wie bisher: Wer nichts kauft, verpasst nichts.</li></ul></div>
+    <div><h3>Das verdienst du dir im Spiel</h3><ul><li>Waffen, Munition, Fahrzeuge, Materialien und Münzen</li><li>Erfahrung, Rezepte und die Größe deiner Base</li></ul></div>
     <div><a class="btn dark" href="shop.html" style="font-size:16px;padding:14px 22px">Alle Details</a><div class="mono" style="color:var(--muted);margin-top:10px;font-size:.6em;max-width:16em">Es gelten die Monetarisierungs-Regeln von Bohemia Interactive.</div></div>
   </div>
 </div></section>
@@ -103,7 +105,7 @@
 <section id="fragen"><div class="wrap">
   <div class="eyebrow mono rv">Fragen</div>
   <h2 class="sec-title rv">Fragen</h2>
-  <div class="faq rv"><details><summary>Wann startet Saison 0?</summary><p>Sobald der Termin feststeht, steht er im Discord unter Ankündigungen. Wer den Ping dafür aktiviert, verpasst ihn nicht.</p></details><details><summary>Was kostet die Mod?</summary><p>Nichts. Zur Unterstützung wird es freiwillige Pakete geben, die nichts am Spiel ändern. Sie sind in der <a href="shop.html">Shop-Vorschau</a> beschrieben.</p></details><details><summary>Kann ich allein spielen?</summary><p>Ja. Jede Kette lässt sich solo durchspielen. In der Gruppe geht es nur schneller.</p></details><details><summary>Gibt es Händler oder Startgeld?</summary><p>Nein. Alles, was es gibt, hat ein Spieler hergestellt. Gehandelt wird unter Spielern.</p></details><details><summary>Brauche ich die Whitelist?</summary><p>Ja, zum Start. Anmelden kannst du dich im Discord.</p></details><details><summary>Läuft das auf PlayStation oder Xbox?</summary><p>Leider nein. DayZ-Mods gibt es nur auf dem PC.</p></details></div>
+  <div class="faq rv"><details><summary>Wann startet Saison 0?</summary><p>Sobald der Termin feststeht, steht er im Discord unter Ankündigungen. Wer den Ping dafür aktiviert, verpasst ihn nicht.</p></details><details><summary>Was kostet die Mod?</summary><p>Die Mod ist kostenlos. Zur Unterstützung wird es freiwillige Pakete geben, die nur das Aussehen betreffen. Sie sind in der <a href="shop.html">Shop-Vorschau</a> beschrieben.</p></details><details><summary>Kann ich allein spielen?</summary><p>Ja. Jede Kette lässt sich solo durchspielen. In der Gruppe geht es nur schneller.</p></details><details><summary>Wie läuft der Handel?</summary><p>Zwischen den Spielern. Alles, was es gibt, hat ein Spieler hergestellt, und die Münzer prägen die Münzen, mit denen gehandelt wird.</p></details><details><summary>Brauche ich die Whitelist?</summary><p>Ja, zum Start. Anmelden kannst du dich im Discord.</p></details><details><summary>Läuft das auf PlayStation oder Xbox?</summary><p>Leider nein. DayZ-Mods gibt es nur auf dem PC.</p></details></div>
 </div></section>
 
 <script>
@@ -140,10 +142,10 @@
 
 </main>
 <footer><div class="wrap">
-  <div><div class="logo-big">ASHWRIGHT</div><p style="margin:12px 0 0;max-width:24em;opacity:.8">DayZ-Mod ohne NPC-Händler. Gebaut von Raphi (Systeme) und Pasi (3D-Modelle).</p></div>
+  <div><div class="logo-big">ASHWRIGHT</div><p style="margin:12px 0 0;max-width:24em;opacity:.8">DayZ-Mod fÃ¼r Handwerk und Basebau nach dem Zusammenbruch. Gebaut von Raphi (Systeme) und Pasi (3D-Modelle).</p></div>
   <div><h4>Seiten</h4><a href="./">Start</a><a href="werkbuch.html">Werkbuch</a><a href="shop.html">Shop-Vorschau</a><a href="./#whitelist">Whitelist</a></div>
   <div><h4>Community</h4><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
-  <p class="fine">ASHWRIGHT ist eine Fan-Mod für DayZ und nicht mit Bohemia Interactive verbunden. DayZ ist eine Marke von Bohemia Interactive. Render und Bilder stammen aus den selbst gebauten Mod-Modellen.</p>
+  <p class="fine">ASHWRIGHT ist eine Fan-Mod fÃ¼r DayZ und nicht mit Bohemia Interactive verbunden. DayZ ist eine Marke von Bohemia Interactive. Render und Bilder stammen aus den selbst gebauten Mod-Modellen.</p>
 </div></footer>
 <script>
 (function(){var els=document.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}

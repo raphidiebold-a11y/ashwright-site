@@ -280,3 +280,15 @@ footer .logo-big{font:900 clamp(46px,6vw,84px)/.9 var(--f-display);letter-spacin
 .hero h1{animation-delay:.1s}.hero .lede{animation-delay:.25s}.hero .cta{animation-delay:.4s}
 @keyframes up{from{opacity:0;transform:translateY(30px)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}.hero video{display:none}}
+
+/* Merkblatt-Band */
+.memo{padding-block:clamp(44px,7vw,100px);background:radial-gradient(80% 120% at 20% 50%,rgba(255,107,33,.08),transparent 60%),var(--bg);border-bottom:1px solid var(--line)}
+.memo .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,5vw,80px);align-items:center}
+.note{position:relative;background:#d8ccb2;color:#1b150e;padding:34px 40px 42px;transform:rotate(-1.4deg);box-shadow:0 34px 80px rgba(0,0,0,.75),inset 0 0 90px rgba(120,90,40,.28);
+  background-image:repeating-linear-gradient(transparent 0 33px,rgba(60,40,10,.08) 33px 34px)}
+.note::before{content:"";position:absolute;left:50%;top:-14px;width:84px;height:28px;margin-left:-42px;background:rgba(236,226,210,.32);transform:rotate(2deg)}
+.note .mono{color:#6a2a0b;font-weight:700;letter-spacing:.2em}
+.note p{margin:16px 0 0;font:900 clamp(30px,4.2vw,58px)/1.02 var(--f-display);text-transform:uppercase;letter-spacing:.03em}
+.stamp-s{position:absolute;right:22px;bottom:18px;border:3px solid #b3380b;color:#b3380b;padding:6px 14px;transform:rotate(-9deg);font-weight:700;font-size:15px;letter-spacing:.2em;opacity:.85}
+.memo-s{margin:0;color:var(--muted);font-size:1.05em;max-width:24em}
+@media(max-width:900px){.memo .wrap{grid-template-columns:1fr}.note{transform:rotate(-.8deg)}}
