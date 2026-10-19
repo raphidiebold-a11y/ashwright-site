@@ -3,38 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex">
 <title>Impressum – ASHWRIGHT</title>
+<meta name="description" content="Impressum von ashwright.de">
+<meta name="robots" content="noindex">
 <link rel="icon" type="image/png" href="favicon.png">
+<link rel="canonical" href="https://ashwright.de/impressum.html">
+
+<link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+
 </head>
 <body>
-<div class="wrap">
-  <div class="top"><a class="logo" href="./">ASHWRIGHT</a></div>
-</div>
-<main class="wrap legal">
+<a class="skip" href="#main">Zum Inhalt</a>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="./"><i>A</i>ASHWRIGHT</a>
+  <nav aria-label="Hauptmenü">
+    <a href="werkbuch.html">Werkbuch</a>
+    <a href="shop.html">Shop</a>
+    <a class="go" href="./#whitelist">Whitelist</a>
+  </nav>
+</div></header>
+<main id="main">
+
+<div class="wrap legal">
   <h1>Impressum</h1>
-
   <h2>Angaben gemäß § 5 DDG</h2>
-  <p>
-    Raphael Diebold<br>
-    Pforzheimer Straße 8<br>
-    75210 Keltern
-  </p>
-
+  <p>Raphael Diebold<br>Pforzheimer Straße 8<br>75210 Keltern</p>
   <h2>Kontakt</h2>
   <p>E-Mail: <a href="mailto:raphidiebold@outlook.de">raphidiebold@outlook.de</a></p>
-
   <h2>Haftung für Inhalte</h2>
   <p>Als Diensteanbieter bin ich nach den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen entferne ich die betreffenden Inhalte umgehend.</p>
-
   <h2>Haftung für Links</h2>
   <p>Diese Seite verlinkt auf externe Seiten (zum Beispiel Discord), auf deren Inhalte ich keinen Einfluss habe. Für diese Inhalte ist immer der jeweilige Anbieter verantwortlich.</p>
-
   <h2>Hinweis zu DayZ</h2>
   <p>ASHWRIGHT ist eine Fan-Mod für DayZ und nicht mit Bohemia Interactive verbunden. DayZ ist eine Marke von Bohemia Interactive.</p>
-
   <p><a href="./">Zurück zur Startseite</a></p>
+</div>
 </main>
+<footer><div class="wrap">
+  <div><div class="logo-big">ASHWRIGHT</div><p style="margin:12px 0 0;max-width:24em;opacity:.8">DayZ-Mod ohne NPC-Händler. Gebaut von Raphi (Systeme) und Pasi (3D-Modelle).</p></div>
+  <div><h4>Seiten</h4><a href="./">Start</a><a href="werkbuch.html">Werkbuch</a><a href="shop.html">Shop-Vorschau</a><a href="./#whitelist">Whitelist</a></div>
+  <div><h4>Community</h4><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+  <p class="fine">ASHWRIGHT ist eine Fan-Mod für DayZ und nicht mit Bohemia Interactive verbunden. DayZ ist eine Marke von Bohemia Interactive. Render und Bilder stammen aus den selbst gebauten Mod-Modellen.</p>
+</div></footer>
+<script>
+(function(){var els=document.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});
+var toc=document.querySelectorAll('.toc a');if(toc.length){var map={};toc.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+var so=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){toc.forEach(function(a){a.classList.remove('on')});var a=map[x.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-20% 0px -70% 0px'});
+document.querySelectorAll('.chapter').forEach(function(c){so.observe(c)})}})();
+</script>
 </body>
 </html>
