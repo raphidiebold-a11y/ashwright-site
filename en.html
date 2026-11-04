@@ -5,154 +5,190 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ASHWRIGHT – DayZ mod: end times, crafting, base building</title>
 <meta name="description" content="ASHWRIGHT is a DayZ mod for the time after the collapse: mine ore, forge tools, build a cozy house and make everything yourself. English and German server, whitelist via Discord.">
-
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="canonical" href="https://ashwright.de/en.html">
-<link rel="alternate" hreflang="de" href="https://ashwright.de/index.html">
+<link rel="alternate" hreflang="de" href="https://ashwright.de/">
+<link rel="alternate" hreflang="en" href="https://ashwright.de/en.html">
+<link rel="alternate" hreflang="x-default" href="https://ashwright.de/">
 <meta property="og:title" content="ASHWRIGHT – DayZ mod: end times, crafting, base building"><meta property="og:description" content="ASHWRIGHT is a DayZ mod for the time after the collapse: mine ore, forge tools, build a cozy house and make everything yourself. English and German server, whitelist via Discord."><meta property="og:image" content="https://ashwright.de/img/hero.webp"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261019f">
-<script>document.documentElement.classList.add('js')</script>
-
+<link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="home.css?v=20261104b">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar"><div class="wrap">
-  <a class="brand" href="en.html"><i>A</i>ASHWRIGHT</a>
+  <a class="brand" href="en.html"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a>
   <nav aria-label="Main menu">
-    <a href="werkbuch-en.html">Handbook</a>
-    <a href="shop-en.html">Shop</a>
-    <a class="lang" href="index.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-    <a class="go" href="en.html#whitelist">Whitelist</a>
+    <a class="lb lk" href="werkbuch-en.html">Handbook</a>
+    <a class="lb lk" href="shop-en.html">Shop</a>
+    <div class="langsw" role="group" aria-label="Language">
+      <a class="lb" href="index.html" hreflang="de" lang="de">DE</a><a class="lb" href="en.html" hreflang="en" lang="en" aria-current="true">EN</a>
+    </div>
+    <a class="btn btn-p" href="#whitelist">Whitelist</a>
   </nav>
 </div></header>
 <main id="main">
 
-<section class="hero" style="padding:0">
-  <img class="poster" src="media/hero-poster.webp" alt="" width="1600" height="670">
-  <video autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.webp" aria-hidden="true"><source src="media/hero-base.mp4" type="video/mp4"></video>
-  <canvas id="embers" aria-hidden="true"></canvas>
+<section class="hero">
+  <img class="bgm" src="media/hero-poster.webp" width="1600" height="900" alt="">
+  <video class="bgm" autoplay muted loop playsinline preload="metadata" poster="media/hero-poster.webp" aria-hidden="true"><source src="media/hero-base.mp4" type="video/mp4"></video>
+  <div class="scrim" aria-hidden="true"></div><div class="fade" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="kicker mono"><span>DayZ mod</span><span>End times</span><span>Map Antoria</span></div>
-    <h1>ASH<span class="o">WRIGHT</span></h1>
-    <p class="lede">Antoria after the collapse. You start with a stone pickaxe and make everything yourself: tools, weapons, clothing and a house with a fireplace where you wait out the night. Alone or with others, in English and German.</p>
-    <div class="cta"><a class="btn" href="#whitelist">Secure a whitelist spot</a><a class="btn ghost" href="https://discord.gg/mjJFGwnTns">Join the Discord</a></div>
+    <div class="main">
+      <div class="chips"><span class="chip lb">DayZ mod · PC</span><span class="chip lb">Map Antoria</span><span class="chip lb">Servers EN + DE</span></div>
+      <h1 class="h">ASHWRIGHT</h1>
+      <div class="rule" aria-hidden="true"></div>
+      <p class="lb sub">Crafting · Professions · Player economy</p>
+      <p class="lede">Antoria after the collapse. You start with a stone pickaxe and make everything yourself: tools, weapons, clothing and a house with a fireplace where you wait out the night. Alone or with others, in English and German.</p>
+      <div class="cta"><a class="btn btn-p" href="#whitelist">Secure a whitelist spot</a><a class="btn btn-g" href="https://discord.gg/mjJFGwnTns">Join the Discord</a></div>
+    </div>
+    <aside class="hud notif">
+      <div class="ph"><span class="lb ac">New document</span><span class="lb dim">ZS 7</span></div>
+      <div class="body"><div class="slot"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#E8E4DA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h10l5 5v19H9zM19 4v5h5M12 15h9M12 19h9M12 23h6"/></svg></div>
+        <div><div class="h3">Leaflet ZS 7 · Civil defence</div><p class="q">“In an emergency, the island provides for itself.”</p><p class="n">Every new character carries it in their jacket.</p></div></div>
+    </aside>
   </div>
-  <div class="facts"><div class="wrap"><div><b>End times</b><span>Antoria after the collapse</span></div><div><b>Craft everything</b><span>From a stone to a weapon</span></div><div><b>Cozy base building</b><span>Fireplace, shutters, furnishing</span></div><div><b>Season 0</b><span>Early access, admitted in waves</span></div></div></div>
 </section>
 
-<section class="memo"><div class="wrap">
-  <div class="note rv"><span class="mono">Civil defence · Leaflet ZS 7</span><p>„In an emergency, the island provides for itself.“</p><span class="stamp-s mono" aria-hidden="true">ZS 7</span></div>
-  <p class="memo-s rv">That is how the leaflet starts that every new character carries in their jacket.</p>
-</div></section>
+<section class="facts-sec"><div class="wrap"><div class="facts"><div class="hud fact"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#E8742C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><path d="M5 16h22M16 5c4 4 4 18 0 22M16 5c-4 4-4 18 0 22"/></svg><div><div class="lb k">World</div><div class="h3 v">End times</div><div class="s">Antoria after the collapse</div></div></div><div class="hud fact"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#E8742C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 26l12-12M15 8l5-5 9 9-5 5zM18 11l3 3"/></svg><div><div class="lb k">Crafting</div><div class="h3 v">Craft everything</div><div class="s">From a stone to a weapon</div></div></div><div class="hud fact"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#E8742C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15L16 6l11 9M8 13v13h16V13M14 26v-7h4v7"/></svg><div><div class="lb k">Base building</div><div class="h3 v">Cozy</div><div class="s">Fireplace, shutters, furnishing</div></div></div><div class="hud fact"><svg width="34" height="34" viewBox="0 0 32 32" fill="none" stroke="#E8742C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 28V5M8 6h15l-3 5 3 5H8"/></svg><div><div class="lb k">Launch</div><div class="h3 v">Season 0</div><div class="s">Early access, admitted in waves</div></div></div></div></div></section>
 
 <section id="spiel"><div class="wrap">
-  <div class="eyebrow mono rv">The game</div>
-  <div class="feature">
-  <div class="txt rv"><div class="num">01</div><h2>The island after the collapse</h2><p>Antoria is deserted. The harbour lies abandoned, the infected stand on the coast road, and the night gets dark. A civil defence leaflet in your jacket tells you what comes next: the island has to provide for itself, and you get that started.</p><a class="more" href="werkbuch-en.html#insel">More about the island</a></div>
-  <figure class="shot rv"><img src="media/shot-sturm.webp" width="1600" height="670" loading="lazy" alt="Storm over the viaduct"><figcaption class="mono">Storm over the viaduct</figcaption></figure>
-</div><div class="feature rev">
-  <div class="txt rv"><div class="num">02</div><h2>You make everything yourself</h2><p>From a field stone to a hand cannon: find ore, mine it, smelt it into ingots in the clay furnace, forge it at the anvil. Every deposit sits where the geology puts it, and its grade ends up in the tool. You assemble weapons from individual parts.</p><a class="more" href="werkbuch-en.html#erze">More about crafting</a></div>
-  <figure class="shot rv"><img src="media/shot-erz.webp" width="1600" height="670" loading="lazy" alt="A chunk breaks under the pickaxe"><figcaption class="mono">A chunk breaks under the pickaxe</figcaption></figure>
-</div><div class="feature">
-  <div class="txt rv"><div class="num">03</div><h2>Your house, your parlour<br><span class="tag-p" style="font-size:13px;letter-spacing:.16em">Work in progress</span></h2><p>You build huts, houses and walls from wood, clay and stone. Shutters and a fireplace turn a bare frame into a parlour, and furnishing it gives you comfort. Outside it is the end of the world, inside your fire is burning.</p><a class="more" href="werkbuch-en.html#bauen">More about building</a></div>
-  <figure class="shot rv"><img src="media/base-b.webp" width="1600" height="670" loading="lazy" alt="Concept image: parlour with a fireplace at dusk"><figcaption class="mono">Concept image: parlour with a fireplace at dusk</figcaption></figure>
-</div><div class="feature rev">
-  <div class="txt rv"><div class="num">04</div><h2>14 professions, five quality grades</h2><p>Whoever specialises in a profession is needed and trades with others, because everything that exists was made by a player. How good something turns out depends on the ore and on the experience of whoever makes it. Every chain can be completed alone as well.</p><a class="more" href="werkbuch-en.html#berufe">More about professions</a><div class="scale rv"><h3>The five quality grades</h3><ol class="rungs"><li>Impure<small>common</small></li><li>Solid<small>&nbsp;</small></li><li>Pure<small>&nbsp;</small></li><li>High-purity<small>&nbsp;</small></li><li>Flawless<small>rare</small></li></ol></div></div>
-  <figure class="shot rv"><img src="media/shot-schmiede.webp" width="1600" height="670" loading="lazy" alt="Forge at dusk"><figcaption class="mono">Forge at dusk</figcaption></figure>
-</div>
+  <div class="lb ac">The game</div>
+  <h2 class="h sec-title">What waits for you on Antoria</h2>
+  
+    <article class="feat">
+      <div class="txt">
+        <div class="num-row"><span class="lb dim">01 / 04</span></div>
+        <h3 class="h">The island after the collapse</h3>
+        <p>Antoria is deserted. The harbour lies abandoned, the infected stand on the coast road, and the night gets dark. A civil defence leaflet in your jacket tells you what comes next: the island has to provide for itself, and you get that started.</p>
+        <a class="more" href="werkbuch-en.html#insel">More about the island ›</a>
+      </div>
+      <figure class="hud media shot"><img src="media/shot-sturm.webp" width="1600" height="670" loading="lazy" alt="Storm over the viaduct"><figcaption class="lb cap">Storm over the viaduct</figcaption></figure>
+    </article>
+  
+    <article class="feat rev">
+      <div class="txt">
+        <div class="num-row"><span class="lb dim">02 / 04</span></div>
+        <h3 class="h">You make everything yourself</h3>
+        <p>From a field stone to a hand cannon: find ore, mine it, smelt it into ingots in the clay furnace, forge it at the anvil. Every deposit sits where the geology puts it, and its grade ends up in the tool. You assemble weapons from individual parts.</p>
+        <a class="more" href="werkbuch-en.html#erze">More about crafting ›</a>
+      </div>
+      <div class="hud media">
+        <div class="ph"><span class="lb">Crafting</span><span class="lb dim">Example: bronze</span></div>
+        <div class="chain">
+          <div class="st"><div class="lb ac">1 · Mine</div><div class="slots">
+            <figure><div class="slot"><img src="img/copper.webp" width="303" height="283" alt=""></div><figcaption>Copper ore</figcaption></figure>
+            <figure><div class="slot"><img src="img/tin.webp" width="359" height="318" alt=""></div><figcaption>Tin ore</figcaption></figure>
+            <figure><div class="slot"><img src="img/coal.webp" width="360" height="234" alt=""></div><figcaption>Coal</figcaption></figure>
+          </div></div>
+          <div class="st"><div class="lb ac">2 · Smelt</div><div class="slots">
+            <figure><div class="slot station"><svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="#BDBDB5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 28V14a8 8 0 0 1 16 0v14M5 28h22M13 28v-6a3 3 0 0 1 6 0v6M14 6V3M18 6V3"/></svg></div><figcaption>Clay furnace</figcaption></figure>
+            <figure><div class="slot hot"><img src="img/ingot_bronze_hot.webp" width="360" height="124" alt=""></div><figcaption class=on>Bronze ingot</figcaption></figure>
+          </div></div>
+          <div class="st"><div class="lb ac">3 · Forge</div><div class="slots">
+            <figure><div class="slot station"><svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="#BDBDB5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h17c0 3.5 3 6 7 6H12c-2 0-3 1-3 3v2M12 22v-4h4v4M7 27h14l-2-5H9z"/></svg></div><figcaption>Anvil</figcaption></figure>
+            <figure><div class="slot"><svg width="40" height="40" viewBox="0 0 32 32" fill="none" stroke="#E8E4DA" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 26l12-12M15 8l5-5 9 9-5 5zM18 11l3 3"/></svg></div><figcaption class=on>Tool</figcaption></figure>
+          </div></div>
+        </div>
+        <div class="chain-foot">The grade of the ore ends up in the tool.</div>
+      </div>
+    </article>
+  
+    <article class="feat">
+      <div class="txt">
+        <div class="num-row"><span class="lb dim">03 / 04</span><span class="lb tag">Work in progress</span></div>
+        <h3 class="h">Your house, your parlour</h3>
+        <p>You build huts, houses and walls from wood, clay and stone. Shutters and a fireplace turn a bare frame into a parlour, and furnishing it gives you comfort. Outside it is the end of the world, inside your fire is burning.</p>
+        <a class="more" href="werkbuch-en.html#bauen">More about building ›</a>
+      </div>
+      <figure class="hud media shot"><img src="media/base-b.webp" width="1600" height="670" loading="lazy" alt="Concept image: parlour with a fireplace at dusk"><figcaption class="lb cap">Concept image: parlour with a fireplace at dusk</figcaption></figure>
+    </article>
+  
+    <article class="feat rev">
+      <div class="txt">
+        <div class="num-row"><span class="lb dim">04 / 04</span></div>
+        <h3 class="h">14 professions, five quality grades</h3>
+        <p>Whoever specialises in a profession is needed and trades with others, because everything that exists was made by a player. How good something turns out depends on the ore and on the experience of whoever makes it. Every chain can be completed alone as well.</p>
+        <div class="hud tip">
+          <div class="head"><div class="slot"><img src="img/ingot_iron.webp" width="360" height="124" alt=""></div>
+            <div><div class="h3">Iron ingot</div><div class="lb">Material</div></div></div>
+          <div class="lb">Quality grade</div>
+          <ol class="tiers"><li style="--c:#9A968C"><span class="h3">Impure</span><span class="segs" aria-hidden="true"><i class=f></i><i></i><i></i><i></i><i></i></span><span class="note">common</span></li><li style="--c:#7DB36A"><span class="h3">Solid</span><span class="segs" aria-hidden="true"><i class=f></i><i class=f></i><i></i><i></i><i></i></span><span class="note"></span></li><li style="--c:#5DA2DE"><span class="h3">Pure</span><span class="segs" aria-hidden="true"><i class=f></i><i class=f></i><i class=f></i><i></i><i></i></span><span class="note"></span></li><li style="--c:#B38AE6"><span class="h3">High-grade</span><span class="segs" aria-hidden="true"><i class=f></i><i class=f></i><i class=f></i><i class=f></i><i></i></span><span class="note"></span></li><li style="--c:#E9B949"><span class="h3">Flawless</span><span class="segs" aria-hidden="true"><i class=f></i><i class=f></i><i class=f></i><i class=f></i><i class=f></i></span><span class="note">rare</span></li></ol>
+        </div>
+        <a class="more" href="werkbuch-en.html#berufe">More about professions ›</a>
+      </div>
+      <figure class="hud media shot"><img src="media/shot-schmiede.webp" width="1600" height="670" loading="lazy" alt="Forge at dusk"><figcaption class="lb cap">Forge at dusk</figcaption></figure>
+    </article>
 </div></section>
 
-<section id="bilder" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
-  <div class="eyebrow mono rv">Gallery</div>
-  <h2 class="sec-title rv">Images</h2>
-  <p class="sec-lead rv" style="margin-bottom:34px">Footage from the game, renders of our in-house models and concept images of how a furnished base should look. Not everything in the concept images is in the game yet.</p>
-  <div class="gal rv"><a href="media/base-a.webp" data-cap="Concept image: the base at dusk"><img src="media/base-a.webp" loading="lazy" alt="Concept image: the base at dusk"></a><a href="media/shot-staub.webp" data-cap="Ore falls apart under the pickaxe"><img src="media/shot-staub.webp" loading="lazy" alt="Ore falls apart under the pickaxe"></a><a href="media/base-e.webp" data-cap="Concept image: farmyard with animals"><img src="media/base-e.webp" loading="lazy" alt="Concept image: farmyard with animals"></a><a href="media/shot-ofen.webp" data-cap="Furnace at dusk"><img src="media/shot-ofen.webp" loading="lazy" alt="Furnace at dusk"></a><a href="media/base-d.webp" data-cap="Concept image: workshop with a wagon"><img src="media/base-d.webp" loading="lazy" alt="Concept image: workshop with a wagon"></a><a href="img/trio.webp" data-cap="Iron, copper, tin"><img src="img/trio.webp" loading="lazy" alt="Iron, copper, tin"></a></div>
-</div></section>
-<dialog class="lb" id="lb"><button type="button">Close</button><img alt=""><p></p></dialog>
-
-<section id="berufe"><div class="wrap">
-  <div class="eyebrow mono rv">Professions</div>
-  <h2 class="sec-title rv">Who will you be</h2>
-  <p class="sec-lead rv" style="margin-bottom:34px">Every job earns experience in its profession. You can learn everything, but mastering everything takes a lot of time.</p>
-  <div class="rv"><div class="tabs" role="tablist"><button role="tab" aria-selected="true" aria-controls="tp0">Raw materials</button><button role="tab" aria-selected="false" aria-controls="tp1">Refining</button><button role="tab" aria-selected="false" aria-controls="tp2">Making</button><button role="tab" aria-selected="false" aria-controls="tp3">Outdoors</button></div><h3 class="nojs-h">Raw materials</h3><div class="tabpanel" id="tp0" role="tabpanel"><div class="t" style="--c:var(--steel)"><h3>Mining</h3><p>Mine ore, with a bigger yield per level.</p></div><div class="t" style="--c:var(--steel)"><h3>Prospecting</h3><p>Find deposits and judge them.</p></div><div class="t" style="--c:var(--steel)"><h3>Forestry &amp; Resin</h3><p>Fell trees, split wood, collect resin.</p></div><div class="t" style="--c:var(--steel)"><h3>Hunting &amp; Tanning</h3><p>Pelts, leather, sinew and meat.</p></div></div><h3 class="nojs-h">Refining</h3><div class="tabpanel" id="tp1" role="tabpanel" hidden><div class="t" style="--c:var(--ember)"><h3>Smelting</h3><p>Smelt ore into ingots in the furnace.</p></div><div class="t" style="--c:var(--ember)"><h3>Ceramics &amp; Glass</h3><p>Crucibles, casting moulds, bricks.</p></div><div class="t" style="--c:var(--ember)"><h3>Lab</h3><p>Sulphur, saltpetre and other base materials.</p></div><div class="t" style="--c:var(--ember)"><h3>Farming</h3><p>Lay out beds, harvest, stock up.</p></div><div class="t" style="--c:var(--ember)"><h3>Minter</h3><p>Strikes the coins that are used for trade.</p></div></div><h3 class="nojs-h">Making</h3><div class="tabpanel" id="tp2" role="tabpanel" hidden><div class="t" style="--c:var(--patina)"><h3>Smithing</h3><p>Tools at the anvil, as a minigame.</p></div><div class="t" style="--c:var(--patina)"><h3>Gunsmith</h3><p>Weapons from individual parts.</p></div><div class="t" style="--c:var(--patina)"><h3>Mechanics</h3><p>Engines and vehicles.</p></div><div class="t" style="--c:var(--patina)"><h3>Building</h3><p>Huts, houses, walls.</p></div></div><h3 class="nojs-h">Outdoors</h3><div class="tabpanel" id="tp3" role="tabpanel" hidden><div class="t" style="--c:var(--glow)"><h3>Survival</h3><p>Make fire, improvised tools, the first days.</p></div><div class="t" style="--c:var(--glow)"><h3>Skills</h3><p>Fitness, stealth, ranged, melee, first aid: they improve through practice.</p></div></div></div>
-  <p class="rv" style="margin-top:30px"><a class="btn ghost" href="werkbuch-en.html">Read the handbook</a></p>
+<section id="berufe" class="sec alt"><div class="wrap">
+  <div class="sec-top"><div><div class="lb ac">Professions</div><h2 class="h sec-title">Who will you be</h2></div><p>Every job earns experience in its profession. You can learn everything, but mastering everything takes a lot of time.</p></div>
+  <div class="groups"><div class="hud group" style="--c:#8BA3AF"><div class="ph"><span class="lb">Raw materials</span><span class="lb dim">4</span></div><ul><li><div class="h3">Mining</div><p>Mine ore, with a bigger yield per level.</p></li><li><div class="h3">Prospecting</div><p>Find deposits and judge them.</p></li><li><div class="h3">Forestry &amp; Resin</div><p>Fell trees, split wood, collect resin.</p></li><li><div class="h3">Hunting &amp; Tanning</div><p>Pelts, leather, sinew and meat.</p></li></ul></div><div class="hud group" style="--c:#E8742C"><div class="ph"><span class="lb">Refining</span><span class="lb dim">5</span></div><ul><li><div class="h3">Smelting</div><p>Smelt ore into ingots in the furnace.</p></li><li><div class="h3">Ceramics &amp; Glass</div><p>Crucibles, casting moulds, bricks.</p></li><li><div class="h3">Lab</div><p>Sulphur, saltpetre and other base materials.</p></li><li><div class="h3">Farming</div><p>Lay out beds, harvest, stock up.</p></li><li><div class="h3">Minter</div><p>Strikes the coins that are used for trade.</p></li></ul></div><div class="hud group" style="--c:#4BB89A"><div class="ph"><span class="lb">Making</span><span class="lb dim">4</span></div><ul><li><div class="h3">Smithing</div><p>Tools at the anvil, as a minigame.</p></li><li><div class="h3">Gunsmith</div><p>Weapons from individual parts.</p></li><li><div class="h3">Mechanics</div><p>Engines and vehicles.</p></li><li><div class="h3">Building</div><p>Huts, houses, walls.</p></li></ul></div><div class="hud group" style="--c:#E0B04A"><div class="ph"><span class="lb">Outdoors</span><span class="lb dim">2</span></div><ul><li><div class="h3">Survival</div><p>Make fire, improvised tools, the first days.</p></li><li><div class="h3">Skills</div><p>Fitness, stealth, ranged, melee, first aid: they improve through practice.</p></li></ul></div></div>
+  <p class="after"><a class="btn btn-g" href="werkbuch-en.html">Read the handbook</a></p>
 </div></section>
 
-<section id="shop" style="background:var(--bg-2);border-block:1px solid var(--line)"><div class="wrap">
-  <div class="eyebrow mono rv">Support</div>
-  <h2 class="sec-title rv">Support the server</h2>
-  <p class="sec-lead rv" style="margin-bottom:34px">The mod is free. If you want to help us, you can buy packages that only affect looks or recognition. Sales begin once the talks with Bohemia Interactive are done.</p>
-  <div class="packs rv"><div class="pack"><span class="tag-p">Preview</span><h3>Reserved spot</h3><p>Your place in season 0 is safe, even when the waves fill up. You start on the same day as everyone in your wave.</p><div class="price">—<s>Price TBA</s></div></div><div class="pack"><span class="tag-p">Preview</span><h3>Supporter</h3><p>Discord role, a name plate in chat and a place on the credits wall.</p><div class="price">—<s>Price TBA</s></div></div><div class="pack"><span class="tag-p">Preview</span><h3>Skins</h3><p>Clothing, weapon finish, base banners, your own master's mark. The look changes, the stats stay the same.</p><div class="price">—<s>Price TBA</s></div></div><div class="pack"><span class="tag-p">under review</span><h3>Queue</h3><p>First in line when the server is full. Only comes if Bohemia approves it.</p><div class="price">—<s>Price TBA</s></div></div></div>
-  <div class="promise rv">
-    <div><h3>What you get</h3><ul><li>Looks, recognition and comfort when logging in.</li><li>Everything about gameplay stays as it is: if you buy nothing, you miss nothing.</li></ul></div>
-    <div><h3>What you earn in the game</h3><ul><li>Weapons, ammo, vehicles, materials and coins</li><li>Experience, recipes and the size of your base</li></ul></div>
-    <div><a class="btn dark" href="shop-en.html" style="font-size:16px;padding:14px 22px">All details</a><div class="mono" style="color:var(--muted);margin-top:10px;font-size:.6em;max-width:16em">Bohemia Interactive's monetisation rules apply.</div></div>
+<section id="bilder" class="sec"><div class="wrap">
+  <div class="sec-top"><div><div class="lb ac">Gallery</div><h2 class="h sec-title">Images</h2></div><p>Footage from the game, renders of our in-house models and concept images of how a furnished base should look. Not everything in the concept images is in the game yet.</p></div>
+  <div class="gal"><figure class="hud"><a href="media/base-a.webp" data-cap="Concept image: the base at dusk"><img src="media/base-a.webp" width="1600" height="900" loading="lazy" alt="Concept image: the base at dusk"></a><figcaption class="lb cap">Concept image: the base at dusk</figcaption></figure><figure class="hud"><a href="media/shot-erz.webp" data-cap="A chunk breaks under the pickaxe"><img src="media/shot-erz.webp" width="1600" height="900" loading="lazy" alt="A chunk breaks under the pickaxe"></a><figcaption class="lb cap">A chunk breaks under the pickaxe</figcaption></figure><figure class="hud"><a href="media/base-e.webp" data-cap="Concept image: farmyard with animals"><img src="media/base-e.webp" width="1600" height="900" loading="lazy" alt="Concept image: farmyard with animals"></a><figcaption class="lb cap">Concept image: farmyard with animals</figcaption></figure><figure class="hud"><a href="media/shot-ofen.webp" data-cap="Furnace at dusk"><img src="media/shot-ofen.webp" width="1600" height="900" loading="lazy" alt="Furnace at dusk"></a><figcaption class="lb cap">Furnace at dusk</figcaption></figure><figure class="hud"><a href="media/base-d.webp" data-cap="Concept image: workshop with a wagon"><img src="media/base-d.webp" width="1600" height="900" loading="lazy" alt="Concept image: workshop with a wagon"></a><figcaption class="lb cap">Concept image: workshop with a wagon</figcaption></figure><figure class="hud"><a href="media/shot-staub.webp" data-cap="Ore falls apart under the pickaxe"><img src="media/shot-staub.webp" width="1600" height="900" loading="lazy" alt="Ore falls apart under the pickaxe"></a><figcaption class="lb cap">Ore falls apart under the pickaxe</figcaption></figure></div>
+</div></section>
+<dialog class="lb-dlg" id="lb"><button type="button" class="lb">Close</button><img alt=""><p class="lb"></p></dialog>
+
+<section id="whitelist" class="sec alt">
+  <img class="bgm" src="media/shot-ofen.webp" width="1600" height="670" loading="lazy" alt="">
+  <div class="wrap">
+    <div class="txt">
+      <div class="lb ac">Season 0</div>
+      <h2 class="h">Whitelist</h2>
+      <p>At launch only registered players get onto the server, in waves. We are two people and want to be able to help everyone on the first evening instead of drowning in chaos.</p>
+      <a class="btn btn-p" href="https://discord.gg/mjJFGwnTns">Sign up in Discord</a>
+      <p class="note">English and German on the server. Safe spots are in the <a href="shop-en.html">shop preview</a>.</p>
+    </div>
+    <div class="hud quest">
+      <div class="ph"><span><i aria-hidden="true"></i><span class="lb ac">Quest</span></span><span class="lb dim">0 / 3</span></div>
+      <div class="h3 qt">A spot in season 0</div>
+      <ol><li><span class="box" aria-hidden="true"></span><div><div class="h3">Join the Discord</div><p>All you need is a Discord account.</p></div></li><li><span class="box" aria-hidden="true"></span><div><div class="h3">Read the rules</div><p>There are only seven.</p></div></li><li><span class="box" aria-hidden="true"></span><div><div class="h3">Sign up</div><p>In the “whitelist” channel click Sign up and enter your Steam64 ID (17 digits, you find it on steamid.io).</p></div></li></ol>
+      <div class="rw"><span class="lb">Reward</span><span class="h3">Access to the server in your wave</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="shop" class="sec"><div class="wrap">
+  <div class="sec-top"><div><div class="lb ac">Support</div><h2 class="h sec-title">Support the server</h2></div><p>The mod is free. If you want to help us, you can buy packages that only affect looks or recognition. Sales begin once the talks with Bohemia Interactive are done.</p></div>
+  <div class="packs"><div class="hud pack"><div class="t"><span class="lb tag">Preview</span></div><div class="b"><div class="h3">Reserved spot</div><p>Your place in season 0 is safe, even when the waves fill up. You start on the same day as everyone in your wave.</p></div><div class="lb pr">Price TBA</div></div><div class="hud pack"><div class="t"><span class="lb tag">Preview</span></div><div class="b"><div class="h3">Supporter</div><p>Discord role, a name plate in chat and a place on the credits wall.</p></div><div class="lb pr">Price TBA</div></div><div class="hud pack"><div class="t"><span class="lb tag">Preview</span></div><div class="b"><div class="h3">Skins</div><p>Clothing, weapon finish, base banners, your own master&#x27;s mark. The look changes, the stats stay the same.</p></div><div class="lb pr">Price TBA</div></div><div class="hud pack"><div class="t"><span class="lb tag grey">Under review</span></div><div class="b"><div class="h3">Queue</div><p>First in line when the server is full. Only comes if Bohemia approves it.</p></div><div class="lb pr">Price TBA</div></div></div>
+  <div class="promise">
+    <div><h3 class="h3">What you get</h3><ul><li>Looks, recognition and comfort when logging in.</li><li>Everything about gameplay stays as it is: if you buy nothing, you miss nothing.</li></ul></div>
+    <div><h3 class="h3">What you earn in the game</h3><ul><li>Weapons, ammo, vehicles, materials and coins</li><li>Experience, recipes and the size of your base</li></ul></div>
+    <div><a class="btn btn-g" href="shop-en.html">All details</a><p class="fine">Bohemia Interactive&#x27;s monetisation rules apply.</p></div>
   </div>
 </div></section>
 
-<section class="band" id="whitelist"><div class="wrap">
-  <div class="rv">
-    <div class="eyebrow mono">Season 0</div>
-    <h2>Whitelist</h2>
-    <p style="max-width:30em;color:#d6ccbc">At launch only registered players get onto the server, in waves. We are two people and want to be able to help everyone on the first evening instead of drowning in chaos.</p>
-    <p><a class="btn" href="https://discord.gg/mjJFGwnTns">Sign up in Discord</a></p>
-    <p class="mono" style="color:var(--muted);max-width:30em;font-size:.68em;line-height:1.8;text-transform:none;letter-spacing:.06em">English and German on the server. Safe spots are in the <a href="shop-en.html">shop preview</a>.</p>
-  </div>
-  <ol class="steps rv"><li><b>Join the Discord</b><span>All you need is a Discord account.</span></li><li><b>Read the rules</b><span>There are only seven.</span></li><li><b>Sign up</b><span>In the “whitelist” channel click <b style="display:inline;font:inherit;text-transform:none;letter-spacing:0">Sign up</b> and enter your Steam64 ID (17 digits, you find it on steamid.io).</span></li></ol>
+<section id="fragen" class="sec alt"><div class="wrap">
+  <div class="lb ac">Questions</div>
+  <h2 class="h sec-title" style="margin-bottom:clamp(28px,4vw,44px)">Questions</h2>
+  <div class="faq"><div><h3 class="h3">When does season 0 start?</h3><p>As soon as the date is fixed, it will be posted in Discord under announcements. Turn on the ping and you will not miss it.</p></div><div><h3 class="h3">What does the mod cost?</h3><p>The mod is free. To support us there will be optional packages that only affect looks.</p></div><div><h3 class="h3">Can I play solo?</h3><p>Yes. Every chain can be completed alone. A group just gets there faster.</p></div><div><h3 class="h3">How does trading work?</h3><p>Between players. Everything that exists was made by a player, and the minters strike the coins that are used for trade.</p></div><div><h3 class="h3">Do I need the whitelist?</h3><p>Yes, at launch. You can sign up in Discord.</p></div><div><h3 class="h3">Does it run on PlayStation or Xbox?</h3><p>Sorry, no. DayZ mods are PC only.</p></div></div>
 </div></section>
-
-<section id="fragen"><div class="wrap">
-  <div class="eyebrow mono rv">Questions</div>
-  <h2 class="sec-title rv">Questions</h2>
-  <div class="faq rv"><details><summary>When does season 0 start?</summary><p>As soon as the date is fixed, it will be posted in Discord under announcements. Turn on the ping and you will not miss it.</p></details><details><summary>What does the mod cost?</summary><p>The mod is free. To support us there will be optional packages that only affect looks. They are described in the <a href="shop-en.html">shop preview</a>.</p></details><details><summary>Can I play solo?</summary><p>Yes. Every chain can be completed alone. A group just gets there faster.</p></details><details><summary>How does trading work?</summary><p>Between players. Everything that exists was made by a player, and the minters strike the coins that are used for trade.</p></details><details><summary>Do I need the whitelist?</summary><p>Yes, at launch. You can sign up in Discord.</p></details><details><summary>Does it run on PlayStation or Xbox?</summary><p>Sorry, no. DayZ mods are PC only.</p></details></div>
-</div></section>
-
-<script>
-(function(){
-  // Glut-Funken im Titelbild
-  var c=document.getElementById('embers');
-  if(c && !matchMedia('(prefers-reduced-motion: reduce)').matches){
-    var x=c.getContext('2d'),W,H,P=[],N=innerWidth<700?26:60;
-    function size(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}
-    function mk(r){return {x:Math.random()*W,y:r?H+10:Math.random()*H,v:.25+Math.random()*.9,s:.6+Math.random()*1.9,d:(Math.random()-.5)*.35,a:.25+Math.random()*.7,t:Math.random()*6}}
-    size();for(var i=0;i<N;i++)P.push(mk(false));addEventListener('resize',size);
-    var run=true;new IntersectionObserver(function(e){run=e[0].isIntersecting}).observe(c);
-    (function f(){if(run){x.clearRect(0,0,W,H);for(var i=0;i<P.length;i++){var p=P[i];p.y-=p.v;p.x+=p.d+Math.sin(p.t+=.02)*.25;
-      if(p.y<-10||p.x<-10||p.x>W+10){P[i]=mk(true);continue}
-      var g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.s*4);g.addColorStop(0,'rgba(255,190,100,'+p.a+')');g.addColorStop(1,'rgba(255,107,33,0)');
-      x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.s*4,0,6.3);x.fill()}}requestAnimationFrame(f)})();
-  }
-  // Video nur, wenn Datensparmodus aus ist; pausiert außerhalb des Bildschirms
-  var v=document.querySelector('.hero video');
-  if(v){var sd=navigator.connection&&navigator.connection.saveData;if(sd){v.remove()}else{
-    new IntersectionObserver(function(e){e[0].isIntersecting?v.play().catch(function(){}):v.pause()}).observe(v)}}
-  // Berufe-Reiter
-  var tabs=document.querySelectorAll('.tabs button'),panels=document.querySelectorAll('.tabpanel');
-  tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(t){t.setAttribute('aria-selected',t===b)});
-    panels.forEach(function(p){p.hidden=p.id!==b.getAttribute('aria-controls')})})});
-  // Bildbetrachter
-  var dlg=document.getElementById('lb');
-  if(dlg&&dlg.showModal){document.querySelectorAll('.gal a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();
-    dlg.querySelector('img').src=a.href;dlg.querySelector('img').alt=a.dataset.cap;dlg.querySelector('p').textContent=a.dataset.cap;dlg.showModal()})});
-    dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.tagName==='BUTTON')dlg.close()})}
-})();
-</script>
-
 
 </main>
-<footer><div class="wrap">
-  <div><div class="logo-big">ASHWRIGHT</div><p style="margin:12px 0 0;max-width:24em;opacity:.8">A DayZ mod about crafting and base building after the collapse. Built by Raphi (systems) and Pasi (3D models).</p></div>
-  <div><h4>Pages</h4><a href="en.html">Home</a><a href="werkbuch-en.html">Handbook</a><a href="shop-en.html">Shop preview</a><a href="en.html#whitelist">Whitelist</a></div>
-  <div><h4>Community</h4><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Legal notice (German)</a><a href="datenschutz.html">Privacy policy (German)</a></div>
-  <p class="fine">ASHWRIGHT is a fan mod for DayZ and is not affiliated with Bohemia Interactive. DayZ is a trademark of Bohemia Interactive. Renders and images come from the mod's in-house models.</p>
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div class="about"><a class="brand" href="en.html"><svg width="30" height="30" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a><p>A DayZ mod about crafting and base building after the collapse. Built by Raphi (systems) and Pasi (3D models).</p></div>
+    <nav aria-label="Pages"><span class="lb">Pages</span><a href="en.html">Home</a><a href="werkbuch-en.html">Handbook</a><a href="shop-en.html">Shop preview</a><a href="#whitelist">Whitelist</a></nav>
+    <nav aria-label="Community"><span class="lb">Community</span><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Legal notice (German)</a><a href="datenschutz.html">Privacy policy (German)</a></nav>
+  </div>
+  <p class="fine">ASHWRIGHT is a fan mod for DayZ and is not affiliated with Bohemia Interactive. DayZ is a trademark of Bohemia Interactive. Renders and images come from the mod&#x27;s in-house models.</p>
 </div></footer>
 <script>
-(function(){var els=document.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
-var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});
-var toc=document.querySelectorAll('.toc a');if(toc.length){var map={};toc.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
-var so=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){toc.forEach(function(a){a.classList.remove('on')});var a=map[x.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-20% 0px -70% 0px'});
-document.querySelectorAll('.chapter').forEach(function(c){so.observe(c)})}})();
+(function(){
+  // Titelvideo: nicht bei Datensparmodus oder reduzierter Bewegung; pausiert außerhalb des Bildschirms
+  var v=document.querySelector('.hero video');
+  if(v){var sd=navigator.connection&&navigator.connection.saveData,rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(sd||rm){v.remove()}else if('IntersectionObserver' in window){new IntersectionObserver(function(x){x[0].isIntersecting?v.play().catch(function(){}):v.pause()}).observe(v)}}
+  // Bildbetrachter
+  var d=document.getElementById('lb');
+  if(d&&d.showModal){document.querySelectorAll('.gal a').forEach(function(a){a.addEventListener('click',function(ev){ev.preventDefault();
+    var i=d.querySelector('img');i.src=a.getAttribute('href');i.alt=a.dataset.cap;d.querySelector('p').textContent=a.dataset.cap;d.showModal()})});
+    d.addEventListener('click',function(ev){if(ev.target===d||ev.target.tagName==='BUTTON')d.close()})}
+})();
 </script>
 </body>
 </html>
