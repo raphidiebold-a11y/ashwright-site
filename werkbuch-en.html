@@ -10,20 +10,22 @@
 <link rel="canonical" href="https://ashwright.de/werkbuch-en.html">
 <link rel="alternate" hreflang="de" href="https://ashwright.de/werkbuch.html">
 <meta property="og:title" content="Handbook – ASHWRIGHT"><meta property="og:description" content="How ASHWRIGHT works: ore, furnace, quality grades, 14 professions, trade, building and PvP. To read up on."><meta property="og:image" content="https://ashwright.de/img/hero.webp"><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261019f">
-<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="home.css?v=20261104d">
+<link rel="stylesheet" href="sub.css?v=20261104d">
 
 </head>
-<body>
+<body class="sub">
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar"><div class="wrap">
-  <a class="brand" href="en.html"><i>A</i>ASHWRIGHT</a>
+  <a class="brand" href="en.html"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a>
   <nav aria-label="Main menu">
-    <a href="werkbuch-en.html" aria-current=page>Handbook</a>
-    <a href="shop-en.html">Shop</a>
-    <a class="lang" href="werkbuch.html" hreflang="de" lang="de" title="Deutsch">DE</a>
-    <a class="go" href="en.html#whitelist">Whitelist</a>
+    <a class="lb lk" href="werkbuch-en.html" aria-current="page">Handbook</a>
+    <a class="lb lk" href="shop-en.html">Shop</a>
+    <div class="langsw" role="group" aria-label="Language">
+      <a class="lb" href="werkbuch.html" hreflang="de" lang="de">DE</a><a class="lb" href="werkbuch-en.html" hreflang="en" lang="en" aria-current="true">EN</a>
+    </div>
+    <a class="btn btn-p" href="en.html#whitelist">Whitelist</a>
   </nav>
 </div></header>
 <main id="main">
@@ -121,11 +123,13 @@
 </div></div></div>
 
 </main>
-<footer><div class="wrap">
-  <div><div class="logo-big">ASHWRIGHT</div><p style="margin:12px 0 0;max-width:24em;opacity:.8">A DayZ mod about crafting and base building after the collapse. Built by Raphi (systems) and Pasi (3D models).</p></div>
-  <div><h4>Pages</h4><a href="en.html">Home</a><a href="werkbuch-en.html">Handbook</a><a href="shop-en.html">Shop preview</a><a href="en.html#whitelist">Whitelist</a></div>
-  <div><h4>Community</h4><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Legal notice (German)</a><a href="datenschutz.html">Privacy policy (German)</a></div>
-  <p class="fine">ASHWRIGHT is a fan mod for DayZ and is not affiliated with Bohemia Interactive. DayZ is a trademark of Bohemia Interactive. Renders and images come from the mod's in-house models.</p>
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div class="about"><a class="brand" href="en.html"><svg width="30" height="30" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a><p>A DayZ mod about crafting and base building after the collapse. Built by Raphi (systems) and Pasi (3D models).</p></div>
+    <nav aria-label="Pages"><span class="lb">Pages</span><a href="en.html">Home</a><a href="werkbuch-en.html">Handbook</a><a href="shop-en.html">Shop preview</a><a href="en.html#whitelist">Whitelist</a></nav>
+    <nav aria-label="Community"><span class="lb">Community</span><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Legal notice (German)</a><a href="datenschutz.html">Privacy policy (German)</a></nav>
+  </div>
+  <p class="fine">ASHWRIGHT is a fan mod for DayZ and is not affiliated with Bohemia Interactive. DayZ is a trademark of Bohemia Interactive. Renders and images come from the mod&#x27;s in-house models.</p>
 </div></footer>
 <script>
 (function(){var els=document.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}

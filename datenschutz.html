@@ -10,20 +10,22 @@
 <link rel="canonical" href="https://ashwright.de/datenschutz.html">
 
 
-<link rel="preload" href="fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=20261019f">
-<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="home.css?v=20261104d">
+<link rel="stylesheet" href="sub.css?v=20261104d">
 
 </head>
-<body>
+<body class="sub">
 <a class="skip" href="#main">Zum Inhalt</a>
 <header class="bar"><div class="wrap">
-  <a class="brand" href="./"><i>A</i>ASHWRIGHT</a>
+  <a class="brand" href="./"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a>
   <nav aria-label="Hauptmenü">
-    <a href="werkbuch.html">Werkbuch</a>
-    <a href="shop.html">Shop</a>
-    
-    <a class="go" href="./#whitelist">Whitelist</a>
+    <a class="lb lk" href="werkbuch.html">Werkbuch</a>
+    <a class="lb lk" href="shop.html">Shop</a>
+    <div class="langsw" role="group" aria-label="Sprache">
+      <a class="lb" href="datenschutz.html" hreflang="de" lang="de" aria-current="true">DE</a><a class="lb" href="en.html" hreflang="en" lang="en">EN</a>
+    </div>
+    <a class="btn btn-p" href="./#whitelist">Whitelist</a>
   </nav>
 </div></header>
 <main id="main">
@@ -45,10 +47,12 @@
   <p><a href="./">Zurück zur Startseite</a></p>
 </div>
 </main>
-<footer><div class="wrap">
-  <div><div class="logo-big">ASHWRIGHT</div><p style="margin:12px 0 0;max-width:24em;opacity:.8">DayZ-Mod für Handwerk und Basebau nach dem Zusammenbruch. Gebaut von Raphi (Systeme) und Pasi (3D-Modelle).</p></div>
-  <div><h4>Seiten</h4><a href="./">Start</a><a href="werkbuch.html">Werkbuch</a><a href="shop.html">Shop-Vorschau</a><a href="./#whitelist">Whitelist</a></div>
-  <div><h4>Community</h4><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div class="about"><a class="brand" href="./"><svg width="30" height="30" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a><p>DayZ-Mod für Handwerk und Basebau nach dem Zusammenbruch. Gebaut von Raphi (Systeme) und Pasi (3D-Modelle).</p></div>
+    <nav aria-label="Seiten"><span class="lb">Seiten</span><a href="./">Start</a><a href="werkbuch.html">Werkbuch</a><a href="shop.html">Shop-Vorschau</a><a href="./#whitelist">Whitelist</a></nav>
+    <nav aria-label="Community"><span class="lb">Community</span><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+  </div>
   <p class="fine">ASHWRIGHT ist eine Fan-Mod für DayZ und nicht mit Bohemia Interactive verbunden. DayZ ist eine Marke von Bohemia Interactive. Render und Bilder stammen aus den selbst gebauten Mod-Modellen.</p>
 </div></footer>
 <script>

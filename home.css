@@ -57,7 +57,7 @@ h1,h2,h3{margin:0}
 .brand .h{font-size:26px;letter-spacing:.14em}
 .bar nav{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px;margin-left:auto}
 .bar nav .lk{color:var(--text);text-decoration:none;padding:13px 0}
-.bar nav .lk:hover{color:var(--ac)}
+.bar nav .lk:hover,.bar nav .lk[aria-current]{color:var(--ac)}
 .langsw{display:flex;border:1px solid var(--line-2)}
 .langsw a{display:flex;align-items:center;justify-content:center;min-width:48px;min-height:44px;color:var(--text);text-decoration:none;letter-spacing:.12em}
 .langsw a+a{border-left:1px solid var(--line-2)}
