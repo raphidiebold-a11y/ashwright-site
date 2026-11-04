@@ -10,23 +10,18 @@
 <link rel="canonical" href="https://ashwright.de/datenschutz.html">
 
 
-<link rel="preload" href="fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="home.css?v=20261104d">
-<link rel="stylesheet" href="sub.css?v=20261104d">
+<link rel="preload" href="fonts/schibsted-grotesk-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css?v=20261105a">
+<link rel="stylesheet" href="sub3.css?v=20261105a">
+<script>document.documentElement.classList.add('js')</script>
 
 </head>
-<body class="sub">
+<body class="pg">
 <a class="skip" href="#main">Zum Inhalt</a>
-<header class="bar"><div class="wrap">
-  <a class="brand" href="./"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a>
-  <nav aria-label="Hauptmenü">
-    <a class="lb lk" href="werkbuch.html">Werkbuch</a>
-    <a class="lb lk" href="shop.html">Shop</a>
-    <div class="langsw" role="group" aria-label="Sprache">
-      <a class="lb" href="datenschutz.html" hreflang="de" lang="de" aria-current="true">DE</a><a class="lb" href="en.html" hreflang="en" lang="en">EN</a>
-    </div>
-    <a class="btn btn-p" href="./#whitelist">Whitelist</a>
-  </nav>
+<header class="top"><div class="wrap">
+  <nav class="l" aria-label="Hauptmenü"><a href="werkbuch.html">Werkbuch</a><a href="shop.html">Shop</a></nav>
+  <a class="mark" href="./">ASHWRIGHT</a>
+  <nav class="r" aria-label="Sprache"><span class="lang"><a href="datenschutz.html" hreflang="de" lang="de" aria-current="true">DE</a><a href="en.html" hreflang="en" lang="en">EN</a></span><a href="https://discord.gg/mjJFGwnTns">Discord</a></nav>
 </div></header>
 <main id="main">
 
@@ -48,16 +43,22 @@
 </div>
 </main>
 <footer class="foot"><div class="wrap">
+  <div class="blocks" role="img" aria-label="ASHWRIGHT"><span style="--h:100%;--c:var(--light)">A</span><span style="--h:78%;--c:var(--p5)">S</span><span style="--h:92%;--c:var(--light-2)">H</span><span style="--h:66%;--c:var(--acc)">W</span><span style="--h:86%;--c:var(--light)">R</span><span style="--h:72%;--c:var(--light-2)">I</span><span style="--h:96%;--c:var(--p5)">G</span><span style="--h:80%;--c:var(--light)">H</span><span style="--h:90%;--c:var(--acc)">T</span></div>
   <div class="cols">
-    <div class="about"><a class="brand" href="./"><svg width="30" height="30" viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1 L21 21 L1 21 Z" fill="#E8742C"/></svg><span class="h">ASHWRIGHT</span></a><p>DayZ-Mod für Handwerk und Basebau nach dem Zusammenbruch. Gebaut von Raphi (Systeme) und Pasi (3D-Modelle).</p></div>
-    <nav aria-label="Seiten"><span class="lb">Seiten</span><a href="./">Start</a><a href="werkbuch.html">Werkbuch</a><a href="shop.html">Shop-Vorschau</a><a href="./#whitelist">Whitelist</a></nav>
-    <nav aria-label="Community"><span class="lb">Community</span><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    <nav aria-label="Seiten"><h2>Seiten</h2><a href="./">Start</a><a href="werkbuch.html">Werkbuch</a><a href="shop.html">Shop-Vorschau</a></nav>
+    <nav aria-label="Community"><h2>Community</h2><a href="https://discord.gg/mjJFGwnTns">Discord</a><a href="./#whitelist">Whitelist</a></nav>
+    <nav aria-label="Rechtliches"><h2>Rechtliches</h2><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
+    <nav aria-label="Sprache"><h2>Sprache</h2><a href="datenschutz.html" hreflang="de" lang="de">Deutsch</a><a href="en.html" hreflang="en" lang="en">English</a></nav>
+    <div class="who"><p>Gebaut von Raphi (Systeme) und Pasi (3D-Modelle).</p></div>
   </div>
-  <p class="fine">ASHWRIGHT ist eine Fan-Mod für DayZ und nicht mit Bohemia Interactive verbunden. DayZ ist eine Marke von Bohemia Interactive. Render und Bilder stammen aus den selbst gebauten Mod-Modellen.</p>
+  <div class="last"><p class="fine">ASHWRIGHT ist eine Fan-Mod für DayZ und nicht mit Bohemia Interactive verbunden. DayZ ist eine Marke von Bohemia Interactive. Render, Bilder und Spielaufnahmen stammen aus der Mod selbst.</p><a class="btn light" href="https://discord.gg/mjJFGwnTns">Discord</a></div>
 </div></footer>
 <script>
-(function(){var els=document.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
-var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});
+(function(){[].forEach.call(document.querySelectorAll('.page-head h1, .page-head p, .page-head figure, .chapter > *, .price-list li, .fair, ol.chain li, .legal > *, .rank > div, .jobs .job'),function(el,i){el.classList.add('rv');el.style.setProperty('--d',i%4)});
+var rv=[].slice.call(document.querySelectorAll('.rv')),tick=false;
+function check(){tick=false;var lim=innerHeight*0.92;rv=rv.filter(function(el){if(el.getBoundingClientRect().top<lim){el.classList.add('in');return false}return true})}
+function onS(){if(!tick){tick=true;requestAnimationFrame(check)}}
+addEventListener('scroll',onS,{passive:true});addEventListener('resize',onS);check();
 var toc=document.querySelectorAll('.toc a');if(toc.length){var map={};toc.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
 var so=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){toc.forEach(function(a){a.classList.remove('on')});var a=map[x.target.id];if(a)a.classList.add('on')}})},{rootMargin:'-20% 0px -70% 0px'});
 document.querySelectorAll('.chapter').forEach(function(c){so.observe(c)})}})();

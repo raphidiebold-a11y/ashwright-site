@@ -1,0 +1,117 @@
+/* ASHWRIGHT – Unterseiten v3 (Werkbuch, Shop, Impressum, Datenschutz). Baut auf site.css auf. */
+
+.pg .top { position: relative; background: var(--bg); }
+
+/* Seitenkopf: großer Titel auf dem Asche-Grund */
+.page-head { padding: clamp(64px, 9vw, 128px) 0 clamp(40px, 5vw, 64px); }
+.page-head h1 { font-size: var(--step-display); font-weight: 800; text-transform: uppercase; letter-spacing: -0.035em; line-height: 0.82; text-wrap: balance; max-width: 14ch; }
+.page-head p { margin-top: 32px; max-width: 60ch; font-size: max(1.125rem, var(--step-body)); }
+section.page-head .wrap > p { max-width: 60ch; }
+.page-head .split { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gut) calc(var(--gut) * 2); align-items: end; }
+.page-head .split .pic { margin: 0; }
+.page-head .split h1 { font-size: clamp(3.5rem, 1rem + 6.2vw, 7.5rem); max-width: none; }
+.band { padding-bottom: var(--gap); }
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.trio img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%); }
+.band .cap { margin-top: 12px; font-size: var(--step-small); color: var(--mute); max-width: 75ch; }
+
+/* ---------- Werkbuch ---------- */
+.book { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); gap: var(--gut) calc(var(--gut) * 2); align-items: start; padding-bottom: var(--gap); }
+.toc { position: sticky; top: 24px; background: var(--s1); padding: 24px; }
+.toc h2 { font-size: var(--step-body); font-weight: 600; margin-bottom: 12px; }
+.toc ol { display: grid; gap: 2px; }
+.toc a { display: block; padding: 6px 0; text-decoration: none; transition: transform 180ms var(--ease-out), color 180ms; }
+.toc a:hover { transform: translateX(6px); }
+.toc a.on { font-weight: 600; text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 3px; text-decoration-color: var(--acc); }
+.chapter { padding-top: 24px; }
+.chapter > p, .chapter > .callout, .chapter > .rungs { max-width: 68ch; }
+.chapter + .chapter { margin-top: 96px; }
+.chapter h2 { text-transform: uppercase; font-size: var(--step-head); font-weight: 800; letter-spacing: -0.045em; line-height: 0.95; margin-bottom: 28px; }
+.chapter > p + p { margin-top: 16px; }
+.callout { background: var(--s1); padding: 24px 28px; margin: 32px 0; }
+.callout b { display: block; margin-bottom: 4px; }
+.pic { margin: 36px 0; }
+.pic img { width: 100%; clip-path: polygon(4% 0, 96% 0, 100% 100%, 0 100%); background: var(--s2); }
+.pic figcaption { margin-top: 10px; font-size: var(--step-small); color: var(--mute); }
+
+/* Güteklassen: der Barren als Messbalken */
+.rungs { display: grid; gap: 10px; margin: 28px 0; }
+.rungs li { display: grid; grid-template-columns: 12ch minmax(0, 1fr) 8ch; align-items: center; gap: 16px; font-weight: 600; }
+.rungs li::after { content: ""; grid-column: 2; grid-row: 1; height: 18px; width: calc(var(--w) * 1%); background: var(--acc); clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 100%, 0 100%); }
+.rungs li small { grid-column: 3; grid-row: 1; font-size: var(--step-body); font-weight: 400; color: var(--mute); text-align: right; }
+.rungs li:nth-child(1) { --w: 20; } .rungs li:nth-child(2) { --w: 40; } .rungs li:nth-child(3) { --w: 60; } .rungs li:nth-child(4) { --w: 80; } .rungs li:nth-child(5) { --w: 100; }
+.scale { margin: 0; }
+
+.rank { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 32px 0 8px; }
+.rank > div { background: var(--s2); color: var(--ink); padding: 24px; display: grid; gap: 8px; align-content: start; }
+.rank small { font-size: var(--step-body); color: var(--mute); }
+.rank h3 { text-transform: uppercase; font-size: var(--step-sub); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+
+.cat-h { text-transform: uppercase; font-size: var(--step-sub); font-weight: 800; letter-spacing: -0.03em; margin: 56px 0 20px; }
+.jobs { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 48px; margin-bottom: 8px; }
+.job { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 0 16px; }
+.job::before { content: ""; grid-row: 1 / span 2; width: 34px; height: 15px; margin-top: 0.3em; background: var(--acc); clip-path: polygon(5px 0, calc(100% - 5px) 0, 100% 100%, 0 100%); }
+.job h3 { font-size: var(--step-body); font-weight: 600; }
+.chapter > .jobs + p { margin-top: 32px; }
+
+/* ---------- Shop ---------- */
+.board { padding-bottom: var(--gap); }
+.menu { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: calc(var(--gut) * 2); align-items: start; }
+.price-list { display: grid; gap: 40px; }
+.price-list li { transition: transform 200ms var(--ease-out); }
+.price-list li:hover { transform: translateX(6px); }
+.price-list .row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 24px; margin-bottom: 8px; }
+.price-list h3 { text-transform: uppercase; font-size: var(--step-sub); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+.badge { font-size: var(--step-body); font-weight: 400; letter-spacing: -0.01em; color: var(--mute); margin-left: 0.6em; }
+.pr { font-weight: 600; white-space: nowrap; }
+.price-list p { max-width: 60ch; }
+.fair { position: sticky; top: 24px; background: var(--s2); color: var(--ink); padding: 32px; }
+.fair h3 { text-transform: uppercase; font-size: var(--step-sub); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 16px; }
+.fair ul { display: grid; gap: 10px; }
+.fair li { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; }
+.fair li::before { content: ""; width: 28px; height: 12px; margin-top: 0.4em; background: var(--p4); clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 100%, 0 100%); }
+.fair .note { margin-top: 24px; font-size: var(--step-small); color: var(--mute); }
+
+.sec-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--gut); align-items: end; margin-bottom: 40px; }
+.sec-head h2 { text-transform: uppercase; font-size: var(--step-head); font-weight: 800; letter-spacing: -0.045em; line-height: 0.95; }
+.sec-head p { max-width: 52ch; }
+ol.chain { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+ol.chain li { background: var(--p3); color: var(--ink); padding: 28px; min-height: 220px; display: flex; flex-direction: column; gap: 12px; }
+ol.chain li:nth-child(2) { background: var(--p2); }
+ol.chain li:nth-child(3) { background: var(--p1); }
+ol.chain h3 { text-transform: uppercase; font-size: var(--step-sub); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.pg main > section:last-child { padding-bottom: 8px; }
+.pg main > section:last-child p.rv { margin-top: 28px; max-width: 52ch; }
+
+/* ---------- Recht ---------- */
+.legal { padding: clamp(64px, 8vw, 120px) 0 24px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gut); align-items: baseline; }
+.legal > h1 { grid-column: 1 / -1; }
+.legal > h2 { grid-column: 1 / span 4; }
+.legal > p { grid-column: 6 / span 7; max-width: 64ch; margin-top: 48px; }
+.legal > p + p { margin-top: 12px; }
+.legal h1 { text-transform: uppercase; font-size: min(var(--step-display), 9.4vw); line-height: 0.88; font-weight: 800; letter-spacing: -0.045em; line-height: 0.95; margin-bottom: 40px; hyphens: manual; }
+.legal h2 { text-transform: uppercase; font-size: var(--step-sub); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-top: 48px; }
+.legal a { text-underline-offset: 4px; }
+
+@media (max-width: 960px) {
+  .book { grid-template-columns: 1fr; }
+  .toc { position: static; margin-bottom: 48px; }
+  .board { padding-top: 48px; }
+  .legal > h2, .legal > p { grid-column: 1 / -1; }
+  .legal > p { margin-top: 12px; }
+  .toc ol { grid-template-columns: 1fr 1fr; column-gap: 24px; }
+  .menu, .page-head .split { grid-template-columns: 1fr; }
+  .fair { position: static; }
+  .sec-head { grid-template-columns: 1fr; }
+  ol.chain { grid-template-columns: 1fr; }
+  ol.chain li { min-height: 0; }
+}
+@media (max-width: 640px) {
+  .page-head h1, .page-head .split h1 { font-size: 11vw; }
+  .rank { grid-template-columns: 1fr; }
+  .trio { grid-template-columns: 1fr 1fr; }
+  .trio figure:first-child { grid-column: 1 / -1; }
+  .jobs { grid-template-columns: 1fr; gap: 18px; }
+  .rungs li { grid-template-columns: 9ch minmax(0, 1fr) 6ch; gap: 10px; }
+  .fair, .callout { padding: 20px; }
+}
